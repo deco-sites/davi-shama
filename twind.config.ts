@@ -6,7 +6,7 @@ export default {
         sm: "640px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",
+        xl: "1230px",
         "2xl": "1536px",
       },
       colors: {
@@ -14,6 +14,7 @@ export default {
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         transparent: "transparent",
+        subdued: "rgba(0,0,0,.5)"
       },
       fontFamily: {
         sans: ["Albert Sans", "sans-serif"],
