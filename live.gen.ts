@@ -11,8 +11,7 @@ import * as $$$$$$$$0 from "./sections/Projects.tsx";
 import * as $$$$$$$$1 from "./sections/Hero.tsx";
 import * as $$$$$$$$2 from "./sections/Footer.tsx";
 import * as $$$$$$$$3 from "./sections/Head.tsx";
-import * as $$$$$$$$4 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$5 from "./sections/Header.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -55,8 +54,7 @@ const manifest: DecoManifest = {
     "deco-sites/davi-shama/sections/Hero.tsx": $$$$$$$$1,
     "deco-sites/davi-shama/sections/Footer.tsx": $$$$$$$$2,
     "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$3,
-    "deco-sites/davi-shama/sections/GetStarted.tsx": $$$$$$$$4,
-    "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$5,
+    "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$4,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

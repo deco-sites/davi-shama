@@ -299,20 +299,6 @@
       ],
       "title": "deco-sites/davi-shama/sections/Head.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "enableInspectVSCode": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Enable Inspect V S Code"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/davi-shama/sections/GetStarted.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link": {
       "type": "object",
       "properties": {
@@ -755,27 +741,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
-      "title": "deco-sites/davi-shama/sections/GetStarted.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/davi-shama/sections/GetStarted.tsx"
-          ],
-          "default": "deco-sites/davi-shama/sections/GetStarted.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=": {
       "title": "deco-sites/davi-shama/sections/Header.tsx",
       "type": "object",
@@ -1092,9 +1057,6 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWQudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g="
