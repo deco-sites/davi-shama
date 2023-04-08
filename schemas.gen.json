@@ -159,20 +159,26 @@
           "title": "Label",
           "description": "Project title"
         },
+        "company": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Company"
+        },
+        "year": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Year"
+        },
         "comingSoon": {
           "type": [
             "boolean",
             "null"
           ],
           "title": "Coming Soon"
-        },
-        "slug": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Slug",
-          "description": "Page slug"
         },
         "href": {
           "type": [

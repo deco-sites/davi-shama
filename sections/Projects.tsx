@@ -6,6 +6,8 @@ export interface Project {
    * @description Project title
    */
   label: string;
+  company?: string;
+  year?: string;
   comingSoon?: boolean;
   /**
    * @description Page link
@@ -30,18 +32,24 @@ export default function Projects({
     <div class="mt-[130px]">
       <div class="container mx-auto text-xs uppercase mb-3">{sectionTitle}</div>
       <div class="">
-        {projects.map(({ label, comingSoon, href, image }) => (
+        {projects.map(({ label, company, year, comingSoon, href, image }) => (
           <>
             {comingSoon
               ? (
                 <div class="border-b border-subdued text-subsubdued">
                   <div
                     href={href}
-                    class="group flex gap-4 items-center relative items-center py-7 container mx-auto"
+                    class="group relative items-center py-7 container mx-auto"
                   >
-                    <div class="text-[32px] leading-[38px]">{label}</div>
-                    <div class="text-[10px] py-2 px-4 bg-[rgba(0,0,0,.05)] rounded-full uppercase font-subsubdued font-medium">
-                      Coming soon
+                    <div class="flex text-[32px]">
+                        <div class="flex-none w-[745px] flex gap-4 items-center">
+                            <div class="">{label}</div>
+                            <div class="text-[10px] py-2 px-4 bg-[rgba(0,0,0,.05)] rounded-full uppercase font-subsubdued font-medium">
+                                Coming soon
+                            </div>
+                        </div>
+                        <div class="flex-none w-[250px] text-subsubdued text-[rgba(0,0,0,.1)]">{company}</div>
+                        <div class="flex-auto text-subsubdued text-[rgba(0,0,0,.1)]">{year}</div>
                     </div>
                   </div>
                 </div>
@@ -54,8 +62,12 @@ export default function Projects({
                   >
                     <div class="w-8 h-8 bg-white rounded-full absolute ml-[-70px]">
                     </div>
-                    <div class="text-[32px] leading-[38px]">{label}</div>
-                    <div class="absolute right-16 top-[-190px] hidden group-hover:block transition ease-in duration-200">
+                    <div class="flex text-[32px] leading-[38px]">
+                        <div class="flex-none w-[745px]">{label}</div>
+                        <div class="flex-none w-[250px] text-subsubdued">{company}</div>
+                        <div class="flex-auto text-subsubdued">{year}</div>
+                    </div>
+                    <div class="absolute z-[2] right-16 top-[-190px] hidden group-hover:block transition ease-in duration-200">
                       <Picture>
                         <Source
                           media="(min-width: 768px)"
