@@ -14,7 +14,12 @@ export default {
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         transparent: "transparent",
-        subdued: "rgba(0,0,0,.5)"
+        subdued: "rgba(0,0,0,.5)",
+        subsubdued: "rgba(0,0,0,.3)",
+      },
+      borderColor: {
+        primary: "#2FD180",
+        subdued: "#D9D9D9",
       },
       fontFamily: {
         sans: ["Albert Sans", "sans-serif"],

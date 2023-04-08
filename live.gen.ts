@@ -7,9 +7,10 @@ import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Hero.tsx";
-import * as $$$$$$$$1 from "./sections/Head.tsx";
-import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$0 from "./sections/Projects.tsx";
+import * as $$$$$$$$1 from "./sections/Hero.tsx";
+import * as $$$$$$$$2 from "./sections/Head.tsx";
+import * as $$$$$$$$3 from "./sections/GetStarted.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -48,9 +49,10 @@ const manifest: DecoManifest = {
     "./routes/[...catchall].tsx": $live_catchall,
   },
   "sections": {
-    "deco-sites/davi-shama/sections/Hero.tsx": $$$$$$$$0,
-    "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$1,
-    "deco-sites/davi-shama/sections/GetStarted.tsx": $$$$$$$$2,
+    "deco-sites/davi-shama/sections/Projects.tsx": $$$$$$$$0,
+    "deco-sites/davi-shama/sections/Hero.tsx": $$$$$$$$1,
+    "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$2,
+    "deco-sites/davi-shama/sections/GetStarted.tsx": $$$$$$$$3,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

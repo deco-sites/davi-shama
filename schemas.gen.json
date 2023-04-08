@@ -147,6 +147,68 @@
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label",
+          "description": "Project title"
+        },
+        "comingSoon": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Coming Soon"
+        },
+        "slug": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Slug",
+          "description": "Page slug"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Preview image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "title": "Project"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project"
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "title": "Section Title"
+        },
+        "projects": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project[]",
+          "title": "Projects"
+        }
+      },
+      "required": [
+        "sectionTitle",
+        "projects"
+      ],
+      "title": "deco-sites/davi-shama/sections/Projects.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4@Props": {
       "type": "object",
       "properties": {
@@ -547,6 +609,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/Projects.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/Projects.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/Projects.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4": {
       "title": "deco-sites/davi-shama/sections/Hero.tsx",
       "type": "object",
@@ -893,6 +976,9 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4"
