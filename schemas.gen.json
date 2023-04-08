@@ -223,6 +223,39 @@
       ],
       "title": "deco-sites/davi-shama/sections/Projects.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "category": {
+          "type": "string",
+          "title": "Category"
+        },
+        "year": {
+          "type": "string",
+          "title": "Year"
+        },
+        "company": {
+          "type": "string",
+          "title": "Company"
+        },
+        "role": {
+          "type": "string",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "title",
+        "category",
+        "year",
+        "company",
+        "role"
+      ],
+      "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4@Props": {
       "type": "object",
       "properties": {
@@ -245,6 +278,105 @@
         "description"
       ],
       "title": "deco-sites/davi-shama/sections/Hero.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner": {
+      "type": "object",
+      "properties": {
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "alt"
+      ],
+      "title": "Banner"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner"
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string",
+          "title": "Color"
+        }
+      },
+      "required": [
+        "color"
+      ],
+      "title": "Bg"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg"
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "Full"
+            },
+            {
+              "type": "string",
+              "const": "Double"
+            }
+          ],
+          "type": "string",
+          "title": "Type"
+        },
+        "banners": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner[]",
+          "title": "Banners"
+        },
+        "bgColors": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg[]",
+          "title": "Bg Colors"
+        }
+      },
+      "required": [
+        "type",
+        "banners"
+      ],
+      "title": "deco-sites/davi-shama/sections/Banner.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "hasBorder": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Has Border"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Zvb3Rlci50c3g=@Props": {
       "type": "object",
@@ -692,6 +824,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4": {
+      "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectHeader.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectHeader.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4": {
       "title": "deco-sites/davi-shama/sections/Hero.tsx",
       "type": "object",
@@ -710,6 +863,48 @@
             "deco-sites/davi-shama/sections/Hero.tsx"
           ],
           "default": "deco-sites/davi-shama/sections/Hero.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=": {
+      "title": "deco-sites/davi-shama/sections/Banner.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/Banner.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/Banner.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectInfo.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectInfo.tsx"
         }
       }
     },
@@ -1064,7 +1259,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Zvb3Rlci50c3g="
