@@ -17,12 +17,12 @@ export default function Hero({
         <div class="w-5 bg-black rounded-full"></div>
         <div>
           <div>
-            <span class="font-bold">{hi}</span> -
+            <span class="font-bold">{hi}</span>
           </div>
           <div>{intro}</div>
         </div>
       </div>
-      <div class="w-[352px] font-sm text-subdued">
+      <div class="w-[352px] text-subdued">
         {description}
       </div>
     </div>
