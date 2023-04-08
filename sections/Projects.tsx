@@ -8,9 +8,9 @@ export interface Project {
   label: string;
   comingSoon?: boolean;
   /**
-   * @description Page slug
+   * @description Page link
    */
-  slug?: string;
+  href?: string;
   /**
    * @description Preview image
    */
@@ -30,13 +30,13 @@ export default function Projects({
     <div class="mt-[130px]">
       <div class="container mx-auto text-xs uppercase mb-3">{sectionTitle}</div>
       <div class="">
-        {projects.map(({ label, comingSoon, slug, image }) => (
+        {projects.map(({ label, comingSoon, href, image }) => (
           <>
             {comingSoon
               ? (
                 <div class="border-b border-subdued text-subsubdued">
                   <div
-                    href={`/${slug}`}
+                    href={href}
                     class="group flex gap-4 items-center relative items-center py-7 container mx-auto"
                   >
                     <div class="text-[32px] leading-[38px]">{label}</div>
@@ -49,7 +49,7 @@ export default function Projects({
               : (
                 <div class="relative border-b border-subdued hover:text-white hover:bg-black transition ease-in duration-200">
                   <a
-                    href={`/${slug}`}
+                    href={href}
                     class="group flex items-center py-7 container mx-auto"
                   >
                     <div class="w-8 h-8 bg-white rounded-full absolute ml-[-70px]">
