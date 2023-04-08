@@ -29,7 +29,7 @@ export default function Projects({
   return (
     <div class="mt-[130px]">
       <div class="container mx-auto text-xs uppercase mb-3">{sectionTitle}</div>
-      <div class="relative">
+      <div class="">
         {projects.map(({ label, comingSoon, slug, image }) => (
           <>
             {comingSoon
@@ -47,7 +47,7 @@ export default function Projects({
                 </div>
               )
               : (
-                <div class="border-b border-subdued hover:text-white hover:bg-black transition ease-in duration-200">
+                <div class="relative border-b border-subdued hover:text-white hover:bg-black transition ease-in duration-200">
                   <a
                     href={`/${slug}`}
                     class="group flex items-center py-7 container mx-auto"
@@ -55,7 +55,7 @@ export default function Projects({
                     <div class="w-8 h-8 bg-white rounded-full absolute ml-[-70px]">
                     </div>
                     <div class="text-[32px] leading-[38px]">{label}</div>
-                    <div class="absolute right-16 top-[-170px] hidden group-hover:block transition ease-in duration-200">
+                    <div class="absolute right-16 top-[-190px] hidden group-hover:block transition ease-in duration-200">
                       <Picture>
                         <Source
                           media="(min-width: 768px)"
