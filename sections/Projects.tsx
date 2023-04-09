@@ -67,7 +67,7 @@ export default function Projects({
                         <div class="flex-none w-[250px] text-subsubdued">{company}</div>
                         <div class="flex-auto text-subsubdued">{year}</div>
                     </div>
-                    <div class="absolute z-[2] right-16 top-[-190px] hidden group-hover:block transition ease-in duration-200">
+                    <div class="fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200">
                       <Picture>
                         <Source
                           media="(min-width: 768px)"
