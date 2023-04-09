@@ -30,7 +30,9 @@ export default function Projects({
 }: Props) {
   return (
     <div class="mt-[130px]">
-      <div class="container mx-auto text-xs uppercase mb-3">{sectionTitle}</div>
+      <div class="text-xs uppercase pb-3 border-b border-subdued">
+        <div class="container mx-auto">{sectionTitle}</div>
+      </div>
       <div class="">
         {projects.map(({ label, company, year, comingSoon, href, image }) => (
           <>
