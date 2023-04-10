@@ -1,5 +1,6 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Example from "deco-sites/start/islands/Example.tsx"
 
 export interface Project {
   /**
@@ -30,6 +31,7 @@ export default function Projects({
 }: Props) {
   return (
     <div class="mt-[130px]">
+      <Example />
       <div class="text-xs uppercase pb-3 border-b border-subdued">
         <div class="container mx-auto">{sectionTitle}</div>
       </div>
