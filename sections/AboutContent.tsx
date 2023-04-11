@@ -69,8 +69,8 @@ export default function AboutContent({
           </a>
         </div>
         <div class="flex text-xl mt-28">
-          {linkGroups.map((group) => (
-            <div class="flex-none w-[350px]">
+          {linkGroups.map((group, i) => (
+            <div class={`flex-none ${i % 2 == 0 && 'w-[350px]' }`}>
               <h2 class="font-medium pb-1">{group.label}</h2>
               {group.links.map((link) => (
                 <a
