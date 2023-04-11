@@ -41,7 +41,7 @@ export default function AboutContent({
   linkGroups,
 }: Props) {
   return (
-    <div class="container mx-auto flex mt-[138px] px-20">
+    <div class="container mx-auto flex mt-[138px] px-28">
       <div class="flex-none w-[425px]">
         <img
           src={picture}
