@@ -41,7 +41,7 @@ export default function AboutContent({
   linkGroups,
 }: Props) {
   return (
-    <div class="container mx-auto flex mt-[138px] px-28">
+    <div class="container mx-auto flex mt-[138px] px-24">
       <div class="flex-none w-[425px]">
         <img
           src={picture}
@@ -56,21 +56,21 @@ export default function AboutContent({
         <h1 class="text-5xl font-medium mb-7">{title}</h1>
         <div>
           {paragraphs.map((paragraph) => (
-            <p class="mb-7 text-xl text-subdued">{paragraph.text}</p>
+            <p class="mb-10 text-xl text-subdued leading-[1.7]">{paragraph.text}</p>
           ))}
         </div>
-        <div class="pt-5">
+        <div class="pt-2">
           <a
             href={button.href}
             target="_blank"
-            class="inline-block bg-black text-white px-7 py-5"
+            class="inline-block bg-black text-white px-7 py-4"
           >
             {button.label}
           </a>
         </div>
         <div class="flex text-xl mt-28">
           {linkGroups.map((group) => (
-            <div class="flex-none w-1/2">
+            <div class="flex-none w-[350px]">
               <h2 class="font-medium pb-1">{group.label}</h2>
               {group.links.map((link) => (
                 <a

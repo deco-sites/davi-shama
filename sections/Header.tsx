@@ -31,7 +31,7 @@ export default function Header({
         </a>
         <div class="flex gap-3">
           {links?.map(({ label, href }) => (
-            <a class="flex flex-col items-center py-2 px-4 hover:underline" href={href}>
+            <a class="flex flex-col items-center py-2 hover:underline" href={href}>
               {label}
               <ActiveLink path={href} />
             </a>

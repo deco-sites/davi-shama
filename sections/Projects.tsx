@@ -66,8 +66,6 @@ export default function Projects({
                     href={href}
                     class="group flex items-center py-7 container mx-auto"
                   >
-                    <div class="w-8 h-8 bg-white rounded-full absolute ml-[-70px]">
-                    </div>
                     <div class="flex text-[32px] leading-[38px]">
                       <div class="flex-none w-[745px]">{label}</div>
                       <div class="flex-none w-[250px] text-subsubdued">
