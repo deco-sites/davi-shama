@@ -10,7 +10,7 @@ export default function Footer({
   textRight,
 }: Props) {
   return (
-    <div class="flex items-center justify-between px-8 mb-8 mt-[120px]">
+    <div class="flex items-center justify-between px-8 mb-8 mt-[120px] text-sm">
       <div class="block">{textLeft}</div>
       <div class="block">{textRight}</div>
     </div>
