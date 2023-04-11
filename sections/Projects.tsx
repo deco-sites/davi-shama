@@ -76,21 +76,24 @@ export default function Projects({
                       <div class="flex-auto text-subsubdued">{year}</div>
                     </div>
                     <div class="fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200">
-                      <Picture>
-                        <Source
-                          media="(min-width: 768px)"
-                          src={image}
-                          width={476}
-                          height={476}
-                        />
-                        <img
-                          sizes="(max-width: 640px) 100vw, 30vw"
-                          src={image}
-                          alt={label}
-                          decoding="async"
-                          loading="lazy"
-                        />
-                      </Picture>
+                      <div class="w-[378px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
+                      <div class="relative">
+                        <Picture>
+                          <Source
+                            media="(min-width: 768px)"
+                            src={image}
+                            width={476}
+                            height={476}
+                          />
+                          <img
+                            sizes="(max-width: 640px) 100vw, 30vw"
+                            src={image}
+                            alt={label}
+                            decoding="async"
+                            loading="lazy"
+                          />
+                        </Picture>
+                      </div>
                     </div>
                   </a>
                 </div>
