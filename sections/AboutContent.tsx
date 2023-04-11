@@ -70,10 +70,10 @@ export default function AboutContent({
         <div class="flex text-xl mt-28">
           {linkGroups.map((group) => (
             <div class="flex-none w-1/2">
-              <h2 class="font-medium">{group.label}</h2>
+              <h2 class="font-medium pb-1">{group.label}</h2>
               {group.links.map((link) => (
                 <a
-                  class="flex items-baseline gap-2 mt-4 text-subdued"
+                  class="flex items-baseline gap-2 mt-3 text-subdued"
                   href={link.href}
                   target={link.external ? "_blank" : ""}
                 >
