@@ -60,21 +60,21 @@ export default function HeadComponent({
             font-family: 'Aktiv Grotesk';
             font-style: normal;
             font-weight: 400;
-            font-display: swap;
+            font-display: block;
             src: url(/AktivGrotesk-Regular.ttf) format('truetype');
           }
           @font-face {
             font-family: 'Aktiv Grotesk';
             font-style: normal;
             font-weight: 500;
-            font-display: swap;
+            font-display: block;
             src: url(AktivGrotesk-Medium.ttf) format('truetype');
           }
           @font-face {
             font-family: 'Aktiv Grotesk';
             font-style: normal;
             font-weight: 700;
-            font-display: swap;
+            font-display: block;
             src: url(AktivGrotesk-Bold.ttf) format('truetype');
           }
       `,
