@@ -62,6 +62,7 @@ export default function AboutContent({
         <div class="pt-5">
           <a
             href={button.href}
+            target="_blank"
             class="inline-block bg-black text-white px-7 py-5"
           >
             {button.label}
