@@ -23,7 +23,7 @@ export default {
         subdued: "#D9D9D9",
       },
       fontFamily: {
-        sans: ["Avantik Grotesk", "sans-serif"],
+        sans: ["Aktiv Grotesk", "sans-serif"],
         serif: ["serif"],
       },
     },

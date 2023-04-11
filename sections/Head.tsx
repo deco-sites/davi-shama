@@ -61,27 +61,27 @@ export default function HeadComponent({
             font-style: normal;
             font-weight: 400;
             font-display: swap;
-            src: url(/AktivGrotesk-Regular.ttf) format('ttf');
+            src: url(/AktivGrotesk-Regular.ttf) format('truetype');
           }
           @font-face {
             font-family: 'Aktiv Grotesk';
             font-style: normal;
             font-weight: 500;
             font-display: swap;
-            src: url(AktivGrotesk-Medium.ttf) format('ttf');
+            src: url(AktivGrotesk-Medium.ttf) format('truetype');
           }
           @font-face {
             font-family: 'Aktiv Grotesk';
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: url(AktivGrotesk-Bold.ttf) format('ttf');
+            src: url(AktivGrotesk-Bold.ttf) format('truetype');
           }
       `,
         }}
       >
       </style>
-      {/* TODO: Procurar o script */}
+      {/* TODO: Procurar o script  */}
       {/* <script async id="quicklink" src="/scripts/quicklink.umd.js"></script> */}
       <script
         dangerouslySetInnerHTML={{
