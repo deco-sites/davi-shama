@@ -44,14 +44,18 @@ export default function Projects({
                     class="group relative items-center py-7 container mx-auto"
                   >
                     <div class="flex text-[32px]">
-                        <div class="flex-none w-[745px] flex gap-4 items-center">
-                            <div class="">{label}</div>
-                            <div class="text-[10px] py-2 px-4 bg-[rgba(0,0,0,.05)] rounded-full uppercase font-subsubdued font-medium">
-                                Coming soon
-                            </div>
+                      <div class="flex-none w-[745px] flex gap-4 items-center">
+                        <div class="">{label}</div>
+                        <div class="text-[10px] py-2 px-4 bg-[rgba(0,0,0,.05)] rounded-full uppercase font-subsubdued font-medium">
+                          Coming soon
                         </div>
-                        <div class="flex-none w-[250px] text-subsubdued text-[rgba(0,0,0,.1)]">{company}</div>
-                        <div class="flex-auto text-subsubdued text-[rgba(0,0,0,.1)]">{year}</div>
+                      </div>
+                      <div class="flex-none w-[250px] text-subsubdued text-[rgba(0,0,0,.1)]">
+                        {company}
+                      </div>
+                      <div class="flex-auto text-subsubdued text-[rgba(0,0,0,.1)]">
+                        {year}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -65,9 +69,11 @@ export default function Projects({
                     <div class="w-8 h-8 bg-white rounded-full absolute ml-[-70px]">
                     </div>
                     <div class="flex text-[32px] leading-[38px]">
-                        <div class="flex-none w-[745px]">{label}</div>
-                        <div class="flex-none w-[250px] text-subsubdued">{company}</div>
-                        <div class="flex-auto text-subsubdued">{year}</div>
+                      <div class="flex-none w-[745px]">{label}</div>
+                      <div class="flex-none w-[250px] text-subsubdued">
+                        {company}
+                      </div>
+                      <div class="flex-auto text-subsubdued">{year}</div>
                     </div>
                     <div class="fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200">
                       <Picture>

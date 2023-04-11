@@ -308,18 +308,19 @@
         },
         "href": {
           "type": "string",
-          "title": "Href",
-          "format": "url"
+          "title": "Href"
         },
         "external": {
-          "type": "boolean",
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "External"
         }
       },
       "required": [
         "label",
-        "href",
-        "external"
+        "href"
       ],
       "title": "Link"
     },
