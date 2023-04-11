@@ -1,6 +1,10 @@
+export interface Props {
+  path: string
+}
+
 export default function ActiveLink({
     path
-}) {
+}: Props) {
   return (
     <div>
         {window?.location?.pathname == path && (

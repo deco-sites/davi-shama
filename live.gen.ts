@@ -7,7 +7,8 @@ import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/ActiveLink.tsx";
+import * as $$$$$0 from "./islands/CurrentPage.tsx";
+import * as $$$$$1 from "./islands/ActiveLink.tsx";
 import * as $$$$$$$$0 from "./sections/Projects.tsx";
 import * as $$$$$$$$1 from "./sections/ProjectHeader.tsx";
 import * as $$$$$$$$2 from "./sections/Hero.tsx";
@@ -17,6 +18,7 @@ import * as $$$$$$$$5 from "./sections/ProjectInfo.tsx";
 import * as $$$$$$$$6 from "./sections/Footer.tsx";
 import * as $$$$$$$$7 from "./sections/Head.tsx";
 import * as $$$$$$$$8 from "./sections/Header.tsx";
+import * as $$$$$$$$9 from "./sections/ProjectNav.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -55,7 +57,8 @@ const manifest: DecoManifest = {
     "./routes/[...catchall].tsx": $live_catchall,
   },
   "islands": {
-    "./islands/ActiveLink.tsx": $$$$$0,
+    "./islands/CurrentPage.tsx": $$$$$0,
+    "./islands/ActiveLink.tsx": $$$$$1,
   },
   "sections": {
     "deco-sites/davi-shama/sections/Projects.tsx": $$$$$$$$0,
@@ -67,6 +70,7 @@ const manifest: DecoManifest = {
     "deco-sites/davi-shama/sections/Footer.tsx": $$$$$$$$6,
     "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$7,
     "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$8,
+    "deco-sites/davi-shama/sections/ProjectNav.tsx": $$$$$$$$9,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

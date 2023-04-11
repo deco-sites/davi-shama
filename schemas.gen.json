@@ -39,6 +39,35 @@
       ],
       "title": "deco-sites/davi-shama/functions/LoadGitHubRaw.ts@Props"
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Pages"
+        }
+      },
+      "required": [
+        "pages"
+      ],
+      "title": "deco-sites/davi-shama/islands/CurrentPage.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQWN0aXZlTGluay50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "title": "Path"
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "title": "deco-sites/davi-shama/islands/ActiveLink.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags"
     },
@@ -608,6 +637,22 @@
       ],
       "title": "deco-sites/davi-shama/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Pages"
+        }
+      },
+      "required": [
+        "pages"
+      ],
+      "title": "deco-sites/davi-shama/sections/ProjectNav.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -817,6 +862,48 @@
             "deco-sites/davi-shama/functions/LoadGitHubRaw.ts"
           ],
           "default": "deco-sites/davi-shama/functions/LoadGitHubRaw.ts"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4": {
+      "title": "./islands/CurrentPage.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/CurrentPage.tsx"
+          ],
+          "default": "./islands/CurrentPage.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQWN0aXZlTGluay50c3g=": {
+      "title": "./islands/ActiveLink.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQWN0aXZlTGluay50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ActiveLink.tsx"
+          ],
+          "default": "./islands/ActiveLink.tsx"
         }
       }
     },
@@ -1114,6 +1201,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4": {
+      "title": "deco-sites/davi-shama/sections/ProjectNav.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectNav.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectNav.tsx"
+        }
+      }
+    },
     "JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4": {
       "title": "$live/sections/PageInclude.tsx",
       "type": "object",
@@ -1361,6 +1469,20 @@
         }
       ]
     },
+    "islands": {
+      "title": "islands",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQWN0aXZlTGluay50c3g="
+        }
+      ]
+    },
     "handlers": {
       "title": "handlers",
       "anyOf": [
@@ -1424,6 +1546,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4"
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
@@ -1499,6 +1624,9 @@
         "anyOf": [
           {
             "$ref": "#/root/functions"
+          },
+          {
+            "$ref": "#/root/islands"
           },
           {
             "$ref": "#/root/handlers"
