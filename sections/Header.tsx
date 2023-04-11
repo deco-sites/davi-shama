@@ -1,4 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import ActiveLink from "deco-sites/start/islands/ActiveLink.tsx"
 
 export interface Link {
   label: string;
@@ -30,7 +31,10 @@ export default function Header({
         </a>
         <div class="flex gap-3">
           {links?.map(({ label, href }) => (
-            <a class="block py-2 px-4 hover:underline" href={href}>{label}</a>
+            <a class="flex flex-col items-center py-2 px-4 hover:underline" href={href}>
+              {label}
+              <ActiveLink path={href} />
+            </a>
           ))}
         </div>
       </header>

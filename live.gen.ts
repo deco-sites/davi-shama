@@ -7,6 +7,7 @@ import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/ActiveLink.tsx";
 import * as $$$$$$$$0 from "./sections/Projects.tsx";
 import * as $$$$$$$$1 from "./sections/ProjectHeader.tsx";
 import * as $$$$$$$$2 from "./sections/Hero.tsx";
@@ -53,6 +54,9 @@ const manifest: DecoManifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/[...catchall].tsx": $live_catchall,
   },
+  "islands": {
+    "./islands/ActiveLink.tsx": $$$$$0,
+  },
   "sections": {
     "deco-sites/davi-shama/sections/Projects.tsx": $$$$$$$$0,
     "deco-sites/davi-shama/sections/ProjectHeader.tsx": $$$$$$$$1,
@@ -87,7 +91,6 @@ const manifest: DecoManifest = {
     "$live/flags/audience.ts": i1$$$$$0,
     "$live/flags/everyone.ts": i1$$$$$1,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };
