@@ -7,7 +7,8 @@ export default function CurrentPage({
 }: Props) {
     let next = pages[0]
     pages?.forEach((page, i) => {
-        if (page === window?.location?.pathname && i < pages.length) next = pages[i + 1]
+        console.log('page', page, i)
+        if (page === window?.location?.pathname && i < pages.length - 1) next = pages[i + 1]
     })
   return (
     <div class="mt-28">
