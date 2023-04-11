@@ -79,19 +79,8 @@ export default function AboutContent({
                 >
                   <div>{link.label}</div>
                   {link.external && (
-                    <svg
-                      width="13"
-                      height="13"
-                      viewBox="0 0 13 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.7019 3.358L2.39151 11.6767L1.334 10.6133L9.64704 2.29838L10.0737 1.87163H9.47024L3.94088 1.87163V0.249535L12.7505 0.249535V9.06594H11.1288V3.53469V2.93071L10.7019 3.358Z"
-                        fill="black"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7019 3.358L2.39151 11.6767L1.334 10.6133L9.64704 2.29838L10.0737 1.87163H9.47024L3.94088 1.87163V0.249535L12.7505 0.249535V9.06594H11.1288V3.53469V2.93071L10.7019 3.358Z" fill="#808080" stroke="white" stroke-width="0.5"/>
                     </svg>
                   )}
                 </a>
