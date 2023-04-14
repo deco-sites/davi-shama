@@ -14,8 +14,8 @@ export default function Hero({
   return (
     <div class="container mx-auto mt-[96px] flex gap-[124px]">
       <div class="flex gap-5 items-stretch w-[640px] text-5xl leading-[60px]">
-        <div class="w-5 bg-black rounded-full"></div>
-        <div>
+        <div class="flex-none w-[6px] bg-black rounded-full"></div>
+        <div class="flex-auto">
           <div>
             <span class="font-medium">{hi}</span>
           </div>
