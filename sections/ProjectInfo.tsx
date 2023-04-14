@@ -2,6 +2,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   title: string;
+  titleLine2?: string;
   /**
    * @format textarea
    */
@@ -19,6 +20,7 @@ export interface Paragraph {
 
 export default function ProjectInfo({
   title,
+  titleLine2,
   text,
   hasBorder,
   removeGap,
@@ -30,7 +32,10 @@ export default function ProjectInfo({
       }`}
     >
       <div class="flex-none font-medium text-2xl leadint-[1.4] pl-[125px] w-[375px]">
-        <div class="w-[170px]">{title}</div>
+        <div class="w-[170px]">
+          <span class="block">{title}</span>
+          { titleLine2 && <span class="block">{titleLine2}</span> }
+        </div>
       </div>
       <div class={`${removeGap ? '' : 'gap-6'} flex-none text-xl w-[724px] text-subdued flex flex-col leading-[1.7]`}>
         {

@@ -632,6 +632,13 @@
           "type": "string",
           "title": "Title"
         },
+        "titleLine2": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Line2"
+        },
         "text": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph[]",
           "format": "textarea",
