@@ -1,5 +1,3 @@
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-
 export interface Props {
   title: string;
   /**
@@ -22,6 +20,16 @@ export default function ProjectHeader({
 }: Props) {
   return (
     <div class="container mx-auto flex mt-32 mb-20">
+      <style
+         dangerouslySetInnerHTML={{
+            __html: `
+                body {
+                    background-color: #f5f5f5;
+                }
+        `,
+            }}
+      >
+      </style>
       <div class="flex-none text-xl font-medium pl-[125px] w-[375px] mt-3">
         {category == 'Miscellaneous' ? (
           <svg width="159" height="19" viewBox="0 0 159 19" fill="none" xmlns="http://www.w3.org/2000/svg">
