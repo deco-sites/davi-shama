@@ -16,7 +16,6 @@ export interface Banner {
 }
 
 export interface Props {
-  type?: "Full" | "Double";
   banners: Banner[];
 }
 

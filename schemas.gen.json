@@ -514,20 +514,6 @@
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Props": {
       "type": "object",
       "properties": {
-        "type": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "Full"
-            },
-            {
-              "type": "string",
-              "const": "Double"
-            }
-          ],
-          "type": "string",
-          "title": "Type"
-        },
         "banners": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner[]",
           "title": "Banners"
@@ -537,6 +523,73 @@
         "banners"
       ],
       "title": "deco-sites/davi-shama/sections/Banner.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "height": {
+          "type": "string",
+          "title": "Height"
+        }
+      },
+      "required": [
+        "height"
+      ],
+      "title": "deco-sites/davi-shama/sections/Spacer.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Step": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description",
+          "format": "textarea"
+        }
+      },
+      "required": [
+        "image",
+        "title",
+        "description"
+      ],
+      "title": "Step"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Step[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Step"
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description",
+          "format": "textarea"
+        },
+        "steps": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Step[]",
+          "title": "Steps"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "steps"
+      ],
+      "title": "deco-sites/davi-shama/sections/DarkContent.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==@Props": {
       "type": "object",
@@ -583,6 +636,13 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph[]",
           "format": "textarea",
           "title": "Text"
+        },
+        "removeGap": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Remove Gap"
         },
         "hasBorder": {
           "type": [
@@ -1186,6 +1246,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=": {
+      "title": "deco-sites/davi-shama/sections/Spacer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/Spacer.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/Spacer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/DarkContent.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/DarkContent.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/DarkContent.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==": {
       "title": "deco-sites/davi-shama/sections/ColorBar.tsx",
       "type": "object",
@@ -1624,6 +1726,12 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA=="

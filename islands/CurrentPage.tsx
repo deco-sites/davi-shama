@@ -11,7 +11,7 @@ export default function CurrentPage({
         if (page === window?.location?.pathname && i < pages.length - 1) next = pages[i + 1]
     })
   return (
-    <div class="mt-28">
+    <div class="mt-20 py-[112px] border-y border-[#D9D9D9]">
         <div class="text-[64px] w-full overflow-hidden">
             <div class="w-[3000px] ml-[-50%]">go to next project — go to next project — go to next project — go to next project</div>
         </div>

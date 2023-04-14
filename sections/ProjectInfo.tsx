@@ -6,6 +6,7 @@ export interface Props {
    * @format textarea
    */
   text: Paragraph[];
+  removeGap?: boolean;
   hasBorder?: boolean;
 }
 
@@ -19,7 +20,8 @@ export interface Paragraph {
 export default function ProjectInfo({
   title,
   text,
-  hasBorder = true,
+  hasBorder,
+  removeGap,
 }: Props) {
   return (
     <div
@@ -27,8 +29,10 @@ export default function ProjectInfo({
         hasBorder && "border-b border-b-subdued"
       }`}
     >
-      <div class="flex-none text-xl pl-[125px] w-[375px]">{title}</div>
-      <div class="flex-none w-[724px] text-subdued flex flex-col gap-6 leading-[1.7]">
+      <div class="flex-none font-medium text-2xl leadint-[1.4] pl-[125px] w-[375px]">
+        <div class="w-[170px]">{title}</div>
+      </div>
+      <div class={`${removeGap ? '' : 'gap-6'} flex-none font-xl w-[724px] text-subdued flex flex-col leading-[1.7]`}>
         {
           text.map(p => {
             return (
