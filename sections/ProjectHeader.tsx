@@ -8,6 +8,7 @@ export interface Props {
   year: string;
   company: string;
   role: string;
+  bgColor: string;
 }
 
 export default function ProjectHeader({
@@ -17,6 +18,7 @@ export default function ProjectHeader({
   year,
   company,
   role,
+  bgColor,
 }: Props) {
   return (
     <div class="container mx-auto flex mt-32 mb-20">
@@ -24,7 +26,7 @@ export default function ProjectHeader({
          dangerouslySetInnerHTML={{
             __html: `
                 body {
-                    background-color: #f5f5f5;
+                    background-color: ${bgColor};
                 }
         `,
             }}
