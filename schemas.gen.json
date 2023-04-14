@@ -282,6 +282,20 @@
         "role": {
           "type": "string",
           "title": "Role"
+        },
+        "bgColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bg Color"
+        },
+        "companyColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Company Color"
         }
       },
       "required": [
@@ -538,6 +552,26 @@
       "required": [],
       "title": "deco-sites/davi-shama/sections/ColorBar.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text",
+          "format": "textarea"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "Paragraph"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph"
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -546,7 +580,8 @@
           "title": "Title"
         },
         "text": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph[]",
+          "format": "textarea",
           "title": "Text"
         },
         "hasBorder": {

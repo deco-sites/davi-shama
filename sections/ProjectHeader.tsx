@@ -8,7 +8,8 @@ export interface Props {
   year: string;
   company: string;
   role: string;
-  bgColor: string;
+  bgColor?: string;
+  companyColor?: string;
 }
 
 export default function ProjectHeader({
@@ -19,6 +20,7 @@ export default function ProjectHeader({
   company,
   role,
   bgColor,
+  companyColor,
 }: Props) {
   return (
     <div class="container mx-auto flex mt-32 mb-20">
@@ -33,7 +35,7 @@ export default function ProjectHeader({
       >
       </style>
       <div class="flex-none text-xl font-medium pl-[125px] w-[375px] mt-3">
-        {category == 'Miscellaneous' ? (
+        {company == 'Miscellaneous' ? (
           <svg width="159" height="19" viewBox="0 0 159 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.824219 0.863281V17.9993H3.44022V5.56728L7.97622 17.9993H10.2802L14.9842 5.54328V17.9993H17.6482V0.863281H14.2402L9.22422 14.4953L4.35222 0.863281H0.824219Z" fill="url(#paint0_radial_334_1762)"/>
             <path d="M23.8292 0.863281H20.9972V3.57528H23.8292V0.863281ZM23.7812 5.51928H21.0452V17.9993H23.7812V5.51928Z" fill="url(#paint1_radial_334_1762)"/>
@@ -129,7 +131,7 @@ export default function ProjectHeader({
             </radialGradient>
             </defs>
           </svg>          
-        ) : <>{category}</>}
+        ) : <div class={companyColor && `text-[${companyColor}]`}>{company}</div>}
         <div class="text-smooth mt-2">
           {year}
         </div>
