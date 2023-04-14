@@ -24,7 +24,7 @@ export default function DarkContent({title, description, steps}: Props) {
         <div class="bg-[rgba(0,0,0,.9)] py-40 text-white">
             <div class="container mx-auto">
                 <div class="ml-[248px] mb-[124px]">
-                    <h2 class="text-[40px] tracking-[-0.005em]">{title}</h2>
+                    <h2 class="text-[40px] tracking-[-0.005em] leading-[1.4] mb-3">{title}</h2>
                     <div class="text-xl text-[rgba(255,255,255,.5)] tracking-[-0.005em] leading-[1.4] w-[724px]">{description}</div>
                 </div>
                 <div class="flex flex-col gap-[104px]">
