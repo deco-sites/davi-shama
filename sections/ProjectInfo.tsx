@@ -32,7 +32,7 @@ export default function ProjectInfo({
       <div class="flex-none font-medium text-2xl leadint-[1.4] pl-[125px] w-[375px]">
         <div class="w-[170px]">{title}</div>
       </div>
-      <div class={`${removeGap ? '' : 'gap-6'} flex-none font-xl w-[724px] text-subdued flex flex-col leading-[1.7]`}>
+      <div class={`${removeGap ? '' : 'gap-6'} flex-none text-xl w-[724px] text-subdued flex flex-col leading-[1.7]`}>
         {
           text.map(p => {
             return (
