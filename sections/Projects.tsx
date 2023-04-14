@@ -46,7 +46,7 @@ export default function Projects({
                     <div class="flex text-[32px]">
                       <div class="flex-none w-[745px] flex gap-4 items-center">
                         <div class="">{label}</div>
-                        <div class="text-[10px] py-2 px-4 bg-[rgba(0,0,0,.05)] rounded-full uppercase font-subsubdued font-medium">
+                        <div class="text-[10px] py-[6px] px-[10px] leading-[1.18] bg-[rgba(0,0,0,.05)] rounded-full uppercase font-subsubdued font-medium">
                           Coming soon
                         </div>
                       </div>
