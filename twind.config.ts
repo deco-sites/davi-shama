@@ -14,8 +14,8 @@ export default {
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         transparent: "transparent",
-        smooth: "rgba(0,0,0,.25)",
         subdued: "rgba(0,0,0,.5)",
+        smooth: "rgba(0,0,0,.4)",
         subsubdued: "rgba(0,0,0,.3)",
       },
       borderColor: {

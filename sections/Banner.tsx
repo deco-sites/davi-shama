@@ -4,84 +4,52 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 export interface Banner {
   alt: string;
   image?: LiveImage;
-}
-
-export interface Bg {
-  color: string;
+  expand?: boolean;
+  /**
+   * @format color
+   */
+  bgColor?: string;
+  padding?: {
+    top?: string;
+    bottom?: string;
+  }
 }
 
 export interface Props {
-  type: "Full" | "Double";
+  type?: "Full" | "Double";
   banners: Banner[];
-  bgColors?: Bg[];
 }
 
 export default function Projects({
-  type,
   banners,
-  bgColors,
 }: Props) {
   return (
-    <>
-      {type === "Full"
-        ? (
-          <div class={`container mx-auto bg-[#2D2128]`}>
+    <div class="container mx-auto flex gap-5 mb-5">
+      {
+        banners.map(banner => (
+          <div
+            class={`flex items-center justify-center
+            ${banner.bgColor && `bg-[${banner.bgColor}]`}
+            ${banner.expand ? `flex-auto` : `flex-none`}
+            ${`pt-[${banner.padding?.top ? banner.padding.top : '0'}]`}
+            ${`pb-[${banner.padding?.bottom ? banner.padding.bottom : '0'}]`}
+          `}>
             <Picture>
               <Source
                 media="(min-width: 768px)"
-                src={banners[0].image}
+                src={banner.image}
               />
               <img
-                src={banners[0].image}
-                alt={banners[0].alt}
+                src={banner.image}
+                alt={banner.alt}
                 decoding="async"
                 loading="lazy"
+                srcset={`${banner.image} 2x`}
               />
             </Picture>
           </div>
-        )
-        : type === "Double"
-        ? (
-          <div class="container mx-auto flex gap-5 h-[774px]">
-            <div
-              class={`flex-auto flex items-center justify-center bg-[${
-                bgColors[0].color
-              }]`}
-            >
-              <Picture>
-                <Source
-                  media="(min-width: 768px)"
-                  src={banners[0].image}
-                />
-                <img
-                  src={banners[0].image}
-                  alt={banners[0].alt}
-                  decoding="async"
-                  loading="lazy"
-                />
-              </Picture>
-            </div>
-            <div
-              class={`flex-auto flex items-center justify-center items-center bg-[${
-                bgColors[1].color
-              }]`}
-            >
-              <Picture>
-                <Source
-                  media="(min-width: 768px)"
-                  src={banners[1].image}
-                />
-                <img
-                  src={banners[1].image}
-                  alt={banners[1].alt}
-                  decoding="async"
-                  loading="lazy"
-                />
-              </Picture>
-            </div>
-          </div>
-        )
-        : ""}
-    </>
+        ))
+      }
+    </div>
   );
 }

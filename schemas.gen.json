@@ -259,6 +259,14 @@
           "type": "string",
           "title": "Title"
         },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description",
+          "format": "textarea"
+        },
         "category": {
           "type": "string",
           "title": "Category"
@@ -440,6 +448,42 @@
         "image": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
+        },
+        "expand": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Expand"
+        },
+        "bgColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bg Color",
+          "format": "color"
+        },
+        "padding": {
+          "type": "object",
+          "properties": {
+            "top": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Top"
+            },
+            "bottom": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Bottom"
+            }
+          },
+          "required": [],
+          "title": "Padding"
         }
       },
       "required": [
@@ -451,25 +495,6 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner"
-      }
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg": {
-      "type": "object",
-      "properties": {
-        "color": {
-          "type": "string",
-          "title": "Color"
-        }
-      },
-      "required": [
-        "color"
-      ],
-      "title": "Bg"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg"
       }
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Props": {
@@ -492,17 +517,26 @@
         "banners": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner[]",
           "title": "Banners"
-        },
-        "bgColors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Bg[]",
-          "title": "Bg Colors"
         }
       },
       "required": [
-        "type",
         "banners"
       ],
       "title": "deco-sites/davi-shama/sections/Banner.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/davi-shama/sections/ColorBar.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props": {
       "type": "object",
@@ -1117,6 +1151,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/ColorBar.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ColorBar.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ColorBar.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==": {
       "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx",
       "type": "object",
@@ -1534,6 +1589,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA=="

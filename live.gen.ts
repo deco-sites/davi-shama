@@ -14,11 +14,12 @@ import * as $$$$$$$$1 from "./sections/ProjectHeader.tsx";
 import * as $$$$$$$$2 from "./sections/Hero.tsx";
 import * as $$$$$$$$3 from "./sections/AboutContent.tsx";
 import * as $$$$$$$$4 from "./sections/Banner.tsx";
-import * as $$$$$$$$5 from "./sections/ProjectInfo.tsx";
-import * as $$$$$$$$6 from "./sections/Footer.tsx";
-import * as $$$$$$$$7 from "./sections/Head.tsx";
-import * as $$$$$$$$8 from "./sections/Header.tsx";
-import * as $$$$$$$$9 from "./sections/ProjectNav.tsx";
+import * as $$$$$$$$5 from "./sections/ColorBar.tsx";
+import * as $$$$$$$$6 from "./sections/ProjectInfo.tsx";
+import * as $$$$$$$$7 from "./sections/Footer.tsx";
+import * as $$$$$$$$8 from "./sections/Head.tsx";
+import * as $$$$$$$$9 from "./sections/Header.tsx";
+import * as $$$$$$$$10 from "./sections/ProjectNav.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -66,11 +67,12 @@ const manifest: DecoManifest = {
     "deco-sites/davi-shama/sections/Hero.tsx": $$$$$$$$2,
     "deco-sites/davi-shama/sections/AboutContent.tsx": $$$$$$$$3,
     "deco-sites/davi-shama/sections/Banner.tsx": $$$$$$$$4,
-    "deco-sites/davi-shama/sections/ProjectInfo.tsx": $$$$$$$$5,
-    "deco-sites/davi-shama/sections/Footer.tsx": $$$$$$$$6,
-    "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$7,
-    "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$8,
-    "deco-sites/davi-shama/sections/ProjectNav.tsx": $$$$$$$$9,
+    "deco-sites/davi-shama/sections/ColorBar.tsx": $$$$$$$$5,
+    "deco-sites/davi-shama/sections/ProjectInfo.tsx": $$$$$$$$6,
+    "deco-sites/davi-shama/sections/Footer.tsx": $$$$$$$$7,
+    "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$8,
+    "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$9,
+    "deco-sites/davi-shama/sections/ProjectNav.tsx": $$$$$$$$10,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {
