@@ -59,12 +59,15 @@ export default function ProjectInfo({
       }
       {
         metrics?.length > 0 && (
-          <div class={`${removeGap ? '' : 'gap-x-6 gap-y-10'} -mt-1 flex-none text-xl w-[724px] grid grid-cols-2`}>
+          <div class={`${removeGap ? '' : 'gap-x-6 gap-y-12'} -mt-1 flex-none text-xl w-[724px] grid grid-cols-2`}>
             {
               metrics.map(m => {
                 return (
                   <div>
-                    <div class="font-medium text-[72px] leading-[1.16] tracking-[-0.015em]">{m.number}</div>
+                    <div class="font-medium text-[72px] leading-[1.16] tracking-[-0.015em] flex">
+                      <span>{m.number}</span>
+                      <span class="text-[44px] pt-[1px]">%</span>
+                    </div>
                     <div class="text-xl text-subdued leading-[1.7]">{m.text}</div>
                   </div>
                 )
