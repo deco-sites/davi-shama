@@ -625,6 +625,30 @@
         "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph"
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Metric": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string",
+          "title": "Number"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "number",
+        "text"
+      ],
+      "title": "Metric"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Metric[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Metric"
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -644,6 +668,10 @@
           "format": "textarea",
           "title": "Text"
         },
+        "metrics": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Metric[]",
+          "title": "Metrics"
+        },
         "removeGap": {
           "type": [
             "boolean",
@@ -660,8 +688,7 @@
         }
       },
       "required": [
-        "title",
-        "text"
+        "title"
       ],
       "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx@Props"
     },

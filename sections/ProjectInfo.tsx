@@ -6,7 +6,8 @@ export interface Props {
   /**
    * @format textarea
    */
-  text: Paragraph[];
+  text?: Paragraph[];
+  metrics?: Metric[];
   removeGap?: boolean;
   hasBorder?: boolean;
 }
@@ -18,10 +19,16 @@ export interface Paragraph {
   text: string;
 }
 
+export interface Metric {
+  number: string;
+  text: string;
+}
+
 export default function ProjectInfo({
   title,
   titleLine2,
   text,
+  metrics,
   hasBorder,
   removeGap,
 }: Props) {
@@ -37,15 +44,35 @@ export default function ProjectInfo({
           { titleLine2 && <span class="block">{titleLine2}</span> }
         </div>
       </div>
-      <div class={`${removeGap ? '' : 'gap-6'} flex-none text-xl w-[724px] text-subdued flex flex-col leading-[1.7]`}>
-        {
-          text.map(p => {
-            return (
-              <p>{p.text}</p>
-            )
-          })
-        }
-      </div>
+      {
+        text?.length > 0 && (
+          <div class={`${removeGap ? '' : 'gap-6'} flex-none text-xl w-[724px] text-subdued flex flex-col leading-[1.7]`}>
+            {
+              text.map(p => {
+                return (
+                  <p>{p.text}</p>
+                )
+              })
+            }
+          </div>
+        )
+      }
+      {
+        metrics?.length > 0 && (
+          <div class={`${removeGap ? '' : 'gap-x-6 gap-y-10'} -mt-1 flex-none text-xl w-[724px] grid grid-cols-2`}>
+            {
+              metrics.map(m => {
+                return (
+                  <div>
+                    <div class="font-medium text-[72px] leading-[1.16] tracking-[-0.015em]">{m.number}</div>
+                    <div class="text-xl text-subdued leading-[1.7]">{m.text}</div>
+                  </div>
+                )
+              })
+            }
+          </div>
+        )
+      }
     </div>
   );
 }
