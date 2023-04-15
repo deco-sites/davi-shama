@@ -63,7 +63,7 @@ export default function AboutContent({
           <a
             href={button.href}
             target="_blank"
-            class="inline-block bg-black text-white px-7 py-4"
+            class="inline-block bg-black text-white px-7 py-4 font-medium"
           >
             {button.label}
           </a>
