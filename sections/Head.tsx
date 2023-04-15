@@ -53,36 +53,6 @@ export default function HeadComponent({
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
       ))}
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @font-face {
-            font-family: 'Aktiv Grotesk';
-            font-style: normal;
-            font-weight: 400;
-            font-display: block;
-            src: url(/AktivGrotesk-Regular.ttf) format('truetype');
-          }
-          @font-face {
-            font-family: 'Aktiv Grotesk';
-            font-style: normal;
-            font-weight: 500;
-            font-display: block;
-            src: url(AktivGrotesk-Medium.ttf) format('truetype');
-          }
-          @font-face {
-            font-family: 'Aktiv Grotesk';
-            font-style: normal;
-            font-weight: 700;
-            font-display: block;
-            src: url(AktivGrotesk-Bold.ttf) format('truetype');
-          }
-      `,
-        }}
-      >
-      </style>
-      {/* TODO: Procurar o script  */}
-      {/* <script async id="quicklink" src="/scripts/quicklink.umd.js"></script> */}
       <script
         dangerouslySetInnerHTML={{
           __html:
