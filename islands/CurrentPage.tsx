@@ -7,7 +7,6 @@ export default function CurrentPage({
 }: Props) {
     let next = pages[0]
     pages?.forEach((page, i) => {
-        console.log('page', page, i)
         if (page === window?.location?.pathname && i < pages.length - 1) next = pages[i + 1]
     })
   return (
@@ -19,7 +18,7 @@ export default function CurrentPage({
             {
                 <a
                     href={next}
-                    class="inline-block bg-black text-white px-7 py-4"
+                    class="inline-block bg-black text-white px-7 py-4 font-medium"
                 >
                     Next Project
                 </a>
