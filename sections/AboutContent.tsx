@@ -41,7 +41,7 @@ export default function AboutContent({
   linkGroups,
 }: Props) {
   return (
-    <div class="container mx-auto px-5 mt-16 md:(px-[212px] mt-20) lg:(flex px-24 mt-[138px])">
+    <div class="mx-auto px-5 mt-16 md:(mt-20 w-[600px]) lg:(container px-[212px] flex px-24 mt-[138px])">
       <div class="flex-none flex justify-center mb-16 lg:(block w-[425px])">
         <Picture>
           <Source
@@ -82,7 +82,7 @@ export default function AboutContent({
         </div>
         <div class="flex flex-col text-xl mt-20 gap-12 md:(gap-0 mt-28 flex-row)">
           {linkGroups.map((group, i) => (
-            <div class={`flex-none ${i % 2 == 0 && 'md:w-[350px]' }`}>
+            <div class={`flex-none ${i % 2 == 0 && 'md:w-[344px]' }`}>
               <h2 class="font-medium pb-1">{group.label}</h2>
               {group.links.map((link) => (
                 <a

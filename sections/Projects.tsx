@@ -29,7 +29,7 @@ export default function Projects({
   projects,
 }: Props) {
   return (
-    <div class="mt-20 md:mt-[124px]">
+    <div class="mt-20 container mx-auto md:mt-[124px] lg:max-w-full">
       <div class="mt-1 hidden lg:block text-xs uppercase pb-3 border-b border-subdued">
         <div class="container mx-auto">{sectionTitle}</div>
       </div>
@@ -64,14 +64,20 @@ export default function Projects({
                 <div class="lg:(relative border-b border-subdued hover:text-white hover:bg-black transition ease-in duration-200)">
                   <a
                     href={href}
-                    class="flex flex-col gap-8 md:(container flex-row) lg:(group items-center py-7 mx-auto)"
+                    class="flex flex-col gap-8 md:(flex-row items-center gap-16) lg:(group container py-7 mx-auto gap-0)"
                   >
                     <div class="lg:(fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200)">
                       <div class="hidden lg:block w-[378px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
-                      <div class="relative">
+                      <div class="flex-none relative md:w-[375px] lg:w-[476px]">
                         <Picture>
                           <Source
                             media="(min-width: 768px)"
+                            src={image}
+                            width={375}
+                            height={375}
+                          />
+                          <Source
+                            media="(min-width: 1025px)"
                             src={image}
                             width={476}
                             height={476}
