@@ -29,16 +29,16 @@ export default function Projects({
   projects,
 }: Props) {
   return (
-    <div class="mt-[130px]">
-      <div class="text-xs uppercase pb-3 border-b border-subdued">
+    <div class="mt-20 md:mt-[124px]">
+      <div class="mt-1 hidden lg:block text-xs uppercase pb-3 border-b border-subdued">
         <div class="container mx-auto">{sectionTitle}</div>
       </div>
-      <div class="">
+      <div class="flex flex-col gap-16 lg:gap-0">
         {projects.map(({ label, company, year, comingSoon, href, image }) => (
           <>
             {comingSoon
               ? (
-                <div class="border-b border-subdued text-subsubdued">
+                <div class="hidden lg:block border-b border-subdued text-subsubdued">
                   <div
                     href={href}
                     class="group relative items-center py-7 container mx-auto"
@@ -61,20 +61,13 @@ export default function Projects({
                 </div>
               )
               : (
-                <div class="relative border-b border-subdued hover:text-white hover:bg-black transition ease-in duration-200">
+                <div class="lg:(relative border-b border-subdued hover:text-white hover:bg-black transition ease-in duration-200)">
                   <a
                     href={href}
-                    class="group flex items-center py-7 container mx-auto"
+                    class="flex flex-col gap-8 md:(container flex-row) lg:(group items-center py-7 mx-auto)"
                   >
-                    <div class="flex text-[32px] leading-[38px]">
-                      <div class="flex-none w-[745px]">{label}</div>
-                      <div class="flex-none w-[250px] text-subsubdued">
-                        {company}
-                      </div>
-                      <div class="flex-auto text-subsubdued">{year}</div>
-                    </div>
-                    <div class="fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200">
-                      <div class="w-[378px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
+                    <div class="lg:(fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200)">
+                      <div class="hidden lg:block w-[378px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
                       <div class="relative">
                         <Picture>
                           <Source
@@ -84,14 +77,23 @@ export default function Projects({
                             height={476}
                           />
                           <img
-                            sizes="(max-width: 640px) 100vw, 30vw"
                             src={image}
                             alt={label}
                             decoding="async"
                             loading="lazy"
+                            srcset={`${image} 2x`}
                           />
                         </Picture>
                       </div>
+                    </div>
+                    <div class="flex flex-col px-5 md:px-0 gap-1 text-2xl lg:(flex-row flex-row-reverse text-3xl)">
+                      <div class="flex items-center gap-2 leading-[1.18]">
+                        <div class="flex-none lg:w-[244px] text-subsubdued">
+                          {company}
+                        </div>
+                        <div class="flex-auto text-subsubdued">{year}</div>
+                      </div>
+                      <div class="flex-none leading-[1.4] lg:(w-[745px] leading-[1.18])">{label}</div>
                     </div>
                   </a>
                 </div>

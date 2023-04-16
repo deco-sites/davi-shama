@@ -17,7 +17,7 @@ export default function Header({
 }: Props) {
   return (
     <div>
-      <header class="flex items-center justify-between px-8 mt-3 fixed top-2 w-full z-30">
+      <header class="flex items-center justify-between px-5 md:px-6 lg:px-8 mt-3 fixed top-2 w-full z-30">
         <a href="/" class="flex gap-2 items-center">
           <img
             src={avatar}
@@ -38,7 +38,7 @@ export default function Header({
           ))}
         </div>
       </header>
-      <div class="h-[40px]"></div>
+      <div class="h-[44px]"></div>
     </div>
   );
 }

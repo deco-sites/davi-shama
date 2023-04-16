@@ -9,6 +9,9 @@ export default {
         xl: "1230px",
         "2xl": "1536px",
       },
+      fontSize: {
+        '3xl': '32px',
+      },
       colors: {
         primary: "#2FD180",
         "primary-dark": "#003232",
