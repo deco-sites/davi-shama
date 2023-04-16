@@ -41,19 +41,31 @@ export default function AboutContent({
   linkGroups,
 }: Props) {
   return (
-    <div class="container mx-auto flex mt-[138px] px-24">
-      <div class="flex-none w-[425px]">
-        <img
-          src={picture}
-          alt={title}
-          decoding="async"
-          loading="lazy"
-          width={278}
-          height={260}
-        />
+    <div class="container mx-auto px-5 mt-16 md:(px-[212px] mt-20) lg:(flex px-24 mt-[138px])">
+      <div class="flex-none flex justify-center mb-16 lg:(block w-[425px])">
+        <Picture>
+          <Source
+            media="(max-width: 767px)"
+            src={picture}
+            width={228}
+            height={213}
+          />
+          <Source
+            src={picture}
+            width={278}
+            height={260}
+          />
+          <img
+            src={picture}
+            alt={title}
+            decoding="async"
+            loading="lazy"
+            srcset={`${picture} 2x`}
+          />
+        </Picture>
       </div>
       <div class="flex-auto">
-        <h1 class="text-5xl font-medium mb-7">{title}</h1>
+        <h1 class="text-3xl leading-[1.18] font-medium mb-4 md:(mb-7 text-5xl)">{title}</h1>
         <div>
           {paragraphs.map((paragraph) => (
             <p class="mb-10 text-xl text-subdued leading-[1.7]">{paragraph.text}</p>
@@ -68,9 +80,9 @@ export default function AboutContent({
             {button.label}
           </a>
         </div>
-        <div class="flex text-xl mt-28">
+        <div class="flex flex-col text-xl mt-20 gap-12 md:(gap-0 mt-28 flex-row)">
           {linkGroups.map((group, i) => (
-            <div class={`flex-none ${i % 2 == 0 && 'w-[350px]' }`}>
+            <div class={`flex-none ${i % 2 == 0 && 'md:w-[350px]' }`}>
               <h2 class="font-medium pb-1">{group.label}</h2>
               {group.links.map((link) => (
                 <a
