@@ -42,17 +42,17 @@ export default function ProjectInfo({
 }: Props) {
   return (
     <div
-      class={`container mx-auto py-[100px] flex ${
+      class={`py-12 md:py-20 lg:flex mx-5 md:(mx-auto max-w-[600px]) lg:(container px-0 py-[100px]) ${
         hasBorder && "border-b border-b-subdued"
       }`}
     >
-      <div class="flex-none font-medium text-2xl leadint-[1.4] pl-[125px] w-[375px]">
-        <div class="w-[170px]">
-          <span class="block">{title}</span>
-          { titleLine2 && <span class="block">{titleLine2}</span> }
+      <div class="flex-none font-medium text-2xl leadint-[1.4] mb-5 md:mb-7 lg:(pl-[126px] w-[375px])">
+        <div class="flex flex-row gap-2 lg:(gap-0 flex-col w-[170px])">
+          <span>{title}</span>
+          { titleLine2 && <span>{titleLine2}</span> }
         </div>
       </div>
-      <div class="flex flex-col gap-12 w-[724px]">
+      <div class="flex flex-col gap-8 md:gap-12 lg:w-[724px]">
         {
           text?.length > 0 && (
             <div class={`${removeGap ? '' : 'gap-6'} flex-none text-xl  text-subdued flex flex-col leading-[1.7]`}>
@@ -68,7 +68,7 @@ export default function ProjectInfo({
         }
         {
           metrics?.length > 0 && (
-            <div class={`${removeGap ? '' : 'gap-x-6 gap-y-12'} -mt-1 flex-none text-xl grid grid-cols-2`}>
+            <div class={`${removeGap ? '' : 'gap-x-6 gap-y-10 md:gap-y-12'} -mt-1 flex-none text-xl grid grid-cols-1 md:grid-cols-2`}>
               {
                 metrics.map(m => {
                   return (
@@ -89,7 +89,7 @@ export default function ProjectInfo({
           backedBy?.length > 0 && (
             <div class="flex flex-col gap-3">
               <div class="text-subsubdued leading-[1.7]">Backed by</div>
-              <div class="flex gap-16 items-center">
+              <div class="flex flex-col gap-6 md:(flex-row gap-16 items-center)">
                 {
                   backedBy.map(brand => {
                     return (
