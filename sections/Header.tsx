@@ -20,7 +20,7 @@ export default function Header({
   return (
     <div>
       <header class={`flex items-center justify-between px-5 fixed ${hasColorBar ? 'top-6' : 'top-5'} w-full z-30 md:px-6 lg:(px-8 ${hasColorBar ? 'top-6' : 'top-3'})`}>
-        <a href="/" class="flex gap-2 items-center">
+        <a href="/" class="flex gap-2 items-center hover:text-smooth duration-200">
           <img
             src={avatar}
             height="40"
@@ -33,7 +33,7 @@ export default function Header({
         </a>
         <div class="flex gap-3">
           {links?.map(({ label, href }) => (
-            <a class="flex flex-col items-center py-2 hover:underline" href={href}>
+            <a class="flex flex-col items-center py-2 hover:text-smooth duration-200" href={href}>
               {label}
               <ActiveLink path={href} />
             </a>

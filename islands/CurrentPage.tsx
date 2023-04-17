@@ -18,7 +18,7 @@ export default function CurrentPage({
             {
                 <a
                     href={next}
-                    class="inline-block bg-black text-white px-7 py-4 font-medium"
+                    class="inline-block bg-black text-white px-[25px] py-[13px] font-medium border-[3px] border-black hover:(text-black bg-transparent) duration-200"
                 >
                     Next Project
                 </a>
