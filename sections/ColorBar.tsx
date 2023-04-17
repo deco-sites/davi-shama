@@ -5,13 +5,7 @@ export interface Props {
 export default function ColorBar({color}: Props) {
     return (
         <div class="fixed top-0 w-full">
-            {
-                color ? (
-                    <div class={`w-full h-2 bg-[${color}]`} />
-                ) : (
-                    <div class={`w-full h-2 multicolor`} />
-                )
-            }
+            <div class={`w-full h-2 ${color? `bg-[${color}]` : 'multicolor'}`} />
         </div>
     )
 }
