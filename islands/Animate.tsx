@@ -17,6 +17,11 @@ class Animate extends Component<Props> {
     document?.getElementById(this.props.id).classList.remove(this.props.remove)
   }
 
+  componentDidUpdate() {
+    document?.getElementById(this.props.id).classList.add(this.props.add)
+    document?.getElementById(this.props.id).classList.remove(this.props.remove)
+  }
+
   render() {
     return (
       <div></div>
