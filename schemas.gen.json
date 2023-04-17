@@ -259,13 +259,41 @@
           "type": "string",
           "title": "Title"
         },
+        "animatedTitle": {
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Line1"
+            },
+            "line2": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Line2"
+            },
+            "line3": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Line3"
+            }
+          },
+          "required": [],
+          "title": "Animated Title",
+          "format": "textarea"
+        },
         "description": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Description",
-          "format": "textarea"
+          "title": "Description"
         },
         "year": {
           "type": "string",
@@ -911,6 +939,13 @@
             "null"
           ],
           "title": "Has Color Bar"
+        },
+        "animateHeader": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Animate Header"
         }
       },
       "required": [

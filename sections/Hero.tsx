@@ -17,6 +17,8 @@ export default function Hero({
   animatedIntro,
   description,
 }: Props) {
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+
   return (
     <>
       <Animate id={["heroHi", "heroLine1", "heroLine2", "heroLine3"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
@@ -29,10 +31,10 @@ export default function Hero({
             </div>
             <div class="md:hidden">{intro}</div>
             <div class="hidden md:block">
-              <div id="heroHi" class="font-medium duration-[1000ms] delay-100 opacity-0 translate-y-5 skew-y-1">{hi}</div>
-              <div id="heroLine1" class="duration-[1000ms] delay-200 opacity-0 translate-y-5 skew-y-1">{animatedIntro?.line1}</div>
-              <div id="heroLine2" class="duration-[1000ms] delay-300 opacity-0 translate-y-5 skew-y-1">{animatedIntro?.line2}</div>
-              <div id="heroLine3" class="duration-[1000ms] delay-[400ms] opacity-0 translate-y-5 skew-y-1">{animatedIntro?.line3}</div>
+              <div id="heroHi" class={`${classes} font-medium delay-100`}>{hi}</div>
+              <div id="heroLine1" class={`${classes} delay-200`}>{animatedIntro?.line1}</div>
+              <div id="heroLine2" class={`${classes} delay-300`}>{animatedIntro?.line2}</div>
+              <div id="heroLine3" class={`${classes} delay-[400ms]`}>{animatedIntro?.line3}</div>
             </div>
           </div>
         </div>

@@ -1,8 +1,15 @@
+import Animate from "deco-sites/start/islands/Animate.tsx";
+
 export interface Props {
   title: string;
   /**
    * @format textarea
    */
+  animatedTitle?: {
+    line1?: string,
+    line2?: string,
+    line3?: string,
+  };
   description?: string;
   year: string;
   company: string;
@@ -12,12 +19,15 @@ export interface Props {
 
 export default function ProjectHeader({
   title,
+  animatedTitle,
   description,
   year,
   company,
   bgColor,
   companyColor,
 }: Props) {
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+
   return (
     <div class="mx-auto px-5 mt-[70px] mb-[52px] md:(px-0 mt-[86px] max-w-[600px] mb-20) lg:(flex container mt-32)">
       <style
@@ -135,8 +145,14 @@ export default function ProjectHeader({
         </div>
       </div>
       <div>
-        <div class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-3xl md:(text-5xl leading-[1.3]) lg:w-[600px]">
-          {title}
+        <Animate id={["projectTitle1", "projectTitle2", "projectTitle3"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
+        <div id="projectTitle" class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-3xl md:(text-5xl leading-[1.3]) lg:w-[600px]">
+          <div class="md:hidden">{title}</div>
+          <div class="hidden md:block">
+            {animatedTitle?.line1 && <div id="projectTitle1" class={`${classes} delay-200`}>{animatedTitle?.line1}</div>}
+            {animatedTitle?.line2 && <div id="projectTitle2" class={`${classes} delay-300`}>{animatedTitle?.line2}</div>}
+            {animatedTitle?.line3 && <div id="projectTitle3" class={`${classes} delay-[400ms]`}>{animatedTitle?.line3}</div>}
+          </div>
         </div>
         {
             description && (

@@ -1,5 +1,7 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Animate from "deco-sites/start/islands/Animate.tsx";
+
 
 export interface Paragraph {
   /**
@@ -40,6 +42,8 @@ export default function AboutContent({
   button,
   linkGroups,
 }: Props) {
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+
   return (
     <div class="mx-auto px-5 mt-16 md:(mt-20 w-[600px]) lg:(container px-[212px] flex px-24 mt-[138px])">
       <div class="flex-none flex justify-center mb-16 lg:(block w-[425px])">
@@ -65,7 +69,8 @@ export default function AboutContent({
         </Picture>
       </div>
       <div class="flex-auto">
-        <h1 class="text-3xl leading-[1.18] font-medium mb-4 md:(mb-7 text-5xl)">{title}</h1>
+        <Animate id={["aboutTitle"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
+        <h1 id="aboutTitle" class={`${classes} text-3xl leading-[1.18] font-medium mb-4 md:(mb-7 text-5xl) delay-100`}>{title}</h1>
         <div>
           {paragraphs.map((paragraph) => (
             <p class="mb-10 text-xl text-subdued leading-[1.7]">{paragraph.text}</p>

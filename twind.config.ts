@@ -31,6 +31,11 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+     transitionDuration: ['hover', 'focus'],
+    }
+  },
   preflight: (preflight: any) => ({
     ...preflight,
 
