@@ -8,7 +8,8 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/CurrentPage.tsx";
-import * as $$$$$1 from "./islands/ActiveLink.tsx";
+import * as $$$$$1 from "./islands/Animate.tsx";
+import * as $$$$$2 from "./islands/ActiveLink.tsx";
 import * as $$$$$$$$0 from "./sections/Projects.tsx";
 import * as $$$$$$$$1 from "./sections/ProjectHeader.tsx";
 import * as $$$$$$$$2 from "./sections/Hero.tsx";
@@ -61,7 +62,8 @@ const manifest: DecoManifest = {
   },
   "islands": {
     "./islands/CurrentPage.tsx": $$$$$0,
-    "./islands/ActiveLink.tsx": $$$$$1,
+    "./islands/Animate.tsx": $$$$$1,
+    "./islands/ActiveLink.tsx": $$$$$2,
   },
   "sections": {
     "deco-sites/davi-shama/sections/Projects.tsx": $$$$$$$$0,
