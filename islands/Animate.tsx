@@ -1,7 +1,7 @@
 import { Component } from "preact";
 
 export type Props = {
-    id: string,
+    id: array,
     add?: array,
     remove?: array,
 }
@@ -13,14 +13,16 @@ class Animate extends Component<Props> {
   }
 
   componentDidMount() {
-    this.props.remove.forEach(r => {
-      document?.getElementById(this.props.id).classList.remove(r)
-    });
-    if (this.props.add) {
-      this.props.add.forEach(a => {
-        document?.getElementById(this.props.id).classList.add(a)
+    this.props.id.forEach(e => {
+      this.props.remove.forEach(r => {
+        document?.getElementById(e).classList.remove(r)
       });
-    }
+      if (this.props.add) {
+        this.props.add.forEach(a => {
+          document?.getElementById(e).classList.add(a)
+        });
+      }
+    });
   }
 
   componentDidUpdate() {

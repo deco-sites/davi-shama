@@ -308,6 +308,29 @@
           "type": "string",
           "title": "Intro"
         },
+        "animatedIntro": {
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": "string",
+              "title": "Line1"
+            },
+            "line2": {
+              "type": "string",
+              "title": "Line2"
+            },
+            "line3": {
+              "type": "string",
+              "title": "Line3"
+            }
+          },
+          "required": [
+            "line1",
+            "line2",
+            "line3"
+          ],
+          "title": "Animated Intro"
+        },
         "description": {
           "type": "string",
           "title": "Description"
