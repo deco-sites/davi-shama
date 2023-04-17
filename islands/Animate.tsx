@@ -2,8 +2,8 @@ import { Component } from "preact";
 
 export type Props = {
     id: string,
-    add: string,
-    remove: string,
+    add?: array,
+    remove?: array,
 }
 
 class Animate extends Component<Props> {
@@ -13,13 +13,17 @@ class Animate extends Component<Props> {
   }
 
   componentDidMount() {
-    document?.getElementById(this.props.id).classList.add(this.props.add)
-    document?.getElementById(this.props.id).classList.remove(this.props.remove)
+    this.props.remove.forEach(r => {
+      document?.getElementById(this.props.id).classList.remove(r)
+    });
+    if (this.props.add) {
+      this.props.add.forEach(a => {
+        document?.getElementById(this.props.id).classList.add(a)
+      });
+    }
   }
 
   componentDidUpdate() {
-    document?.getElementById(this.props.id).classList.add(this.props.add)
-    document?.getElementById(this.props.id).classList.remove(this.props.remove)
   }
 
   render() {
