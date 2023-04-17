@@ -7,6 +7,7 @@ export interface Props {
 export default function ProjectNav({
     pages,
 }: Props) {
+
   return (
     <CurrentPage pages={pages} />
   );

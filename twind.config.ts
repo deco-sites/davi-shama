@@ -40,4 +40,9 @@ export default {
       "-moz-osx-font-smoothing": "grayscale",
     },
   }),
-};
+  plugins: {
+    multicolor: {
+      background: "radial-gradient(100% 8151.79% at 0% 50%, #FC7074 0%, #EA95D6 39.06%, #54C3FF 66.15%, #4CB943 96.88%)"
+    }
+  },
+}

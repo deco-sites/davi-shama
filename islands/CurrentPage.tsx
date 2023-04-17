@@ -10,9 +10,9 @@ export default function CurrentPage({
         if (page === window?.location?.pathname && i < pages.length - 1) next = pages[i + 1]
     })
   return (
-    <div class="mt-20 py-[112px] border-y border-[#D9D9D9]">
-        <div class="text-[64px] w-full overflow-hidden">
-            <div class="w-[3000px] ml-[-50%]">go to next project — go to next project — go to next project — go to next project</div>
+    <div class="border-y border-[#D9D9D9] mt-10 py-[94px] md:(mt-[100px] py-[112px]) lg:(mt-[90px])">
+        <div class="w-full overflow-hidden text-[40px] md:text-[64px]">
+            <div class="w-[3000px] ml-[-96%] md:ml-[-50%]">go to next project — go to next project — go to next project — go to next project</div>
         </div>
         <div class="mt-8 flex justify-center">
             {

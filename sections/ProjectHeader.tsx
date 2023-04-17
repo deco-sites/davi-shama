@@ -4,10 +4,8 @@ export interface Props {
    * @format textarea
    */
   description?: string;
-  category: string;
   year: string;
   company: string;
-  role: string;
   bgColor?: string;
   companyColor?: string;
 }
@@ -15,15 +13,13 @@ export interface Props {
 export default function ProjectHeader({
   title,
   description,
-  category,
   year,
   company,
-  role,
   bgColor,
   companyColor,
 }: Props) {
   return (
-    <div class="container mx-auto flex mt-32 mb-20">
+    <div class="mx-auto px-5 mt-[70px] mb-[52px] md:(px-0 mt-[86px] max-w-[600px] mb-20) lg:(flex container mt-32)">
       <style
          dangerouslySetInnerHTML={{
             __html: `
@@ -34,7 +30,7 @@ export default function ProjectHeader({
             }}
       >
       </style>
-      <div class="flex-none text-xl pl-[125px] w-[375px] mt-3">
+      <div class="flex-none flex items-center gap-3 text-xl mb-4 md:mb-5 lg:(mt-3 mb-0 pl-[125px] w-[375px] block)">
         {company == 'Miscellaneous' ? (
           <svg width="159" height="19" viewBox="0 0 159 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.824219 0.863281V17.9993H3.44022V5.56728L7.97622 17.9993H10.2802L14.9842 5.54328V17.9993H17.6482V0.863281H14.2402L9.22422 14.4953L4.35222 0.863281H0.824219Z" fill="url(#paint0_radial_334_1762)"/>
@@ -137,12 +133,12 @@ export default function ProjectHeader({
         </div>
       </div>
       <div>
-        <div class="flex-none font-medium w-[600px] text-5xl leading-[1.3] tracking-[-0.007em]">
+        <div class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-3xl md:(text-5xl leading-[1.3]) lg:w-[600px]">
           {title}
         </div>
         {
             description && (
-              <div class="mt-10 w-724px leading-[1.3] text-subdued text-xl">
+              <div class="leading-[1.3] text-subdued text-xl mt-6 md:mt-10">
                 {description}
               </div>
             )

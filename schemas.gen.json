@@ -267,10 +267,6 @@
           "title": "Description",
           "format": "textarea"
         },
-        "category": {
-          "type": "string",
-          "title": "Category"
-        },
         "year": {
           "type": "string",
           "title": "Year"
@@ -278,10 +274,6 @@
         "company": {
           "type": "string",
           "title": "Company"
-        },
-        "role": {
-          "type": "string",
-          "title": "Role"
         },
         "bgColor": {
           "type": [
@@ -300,10 +292,8 @@
       },
       "required": [
         "title",
-        "category",
         "year",
-        "company",
-        "role"
+        "company"
       ],
       "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx@Props"
     },
@@ -470,34 +460,111 @@
           ],
           "title": "Expand"
         },
+        "padding": {
+          "type": "object",
+          "properties": {
+            "sm": {
+              "type": "object",
+              "properties": {
+                "top": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Top"
+                },
+                "bottom": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Bottom"
+                },
+                "xAxis": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "X Axis"
+                }
+              },
+              "required": [],
+              "title": "Sm"
+            },
+            "md": {
+              "type": "object",
+              "properties": {
+                "MdTop": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": " Md Top"
+                },
+                "MdBottom": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": " Md Bottom"
+                },
+                "xAxis": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "X Axis"
+                }
+              },
+              "required": [],
+              "title": "Md"
+            },
+            "lg": {
+              "type": "object",
+              "properties": {
+                "LgTop": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": " Lg Top"
+                },
+                "LgBottom": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": " Lg Bottom"
+                },
+                "xAxis": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "X Axis"
+                }
+              },
+              "required": [],
+              "title": "Lg"
+            }
+          },
+          "required": [],
+          "title": "Padding",
+          "description": "Also adds a 30px mobile padding to x axis"
+        },
         "bgColor": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Bg Color",
-          "format": "color"
+          "title": "Bg Color"
         },
-        "padding": {
-          "type": "object",
-          "properties": {
-            "top": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Top"
-            },
-            "bottom": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Bottom"
-            }
-          },
-          "required": [],
-          "title": "Padding"
+        "widthOnTablet": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Width On Tablet"
         }
       },
       "required": [
@@ -814,6 +881,13 @@
         "links": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link[]",
           "title": "Links"
+        },
+        "hasColorBar": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Has Color Bar"
         }
       },
       "required": [

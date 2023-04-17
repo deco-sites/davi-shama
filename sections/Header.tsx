@@ -9,15 +9,17 @@ export interface Link {
 export interface Props {
   avatar: LiveImage;
   links?: Link[];
+  hasColorBar?: boolean;
 }
 
 export default function Header({
   avatar,
   links,
+  hasColorBar,
 }: Props) {
   return (
     <div>
-      <header class="flex items-center justify-between px-5 fixed top-5 w-full z-30 md:px-6 lg:(px-8 top-3)">
+      <header class={`flex items-center justify-between px-5 fixed ${hasColorBar ? 'top-6' : 'top-5'} w-full z-30 md:px-6 lg:(px-8 ${hasColorBar ? 'top-6' : 'top-3'})`}>
         <a href="/" class="flex gap-2 items-center">
           <img
             src={avatar}
