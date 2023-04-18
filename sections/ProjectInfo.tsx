@@ -51,7 +51,7 @@ export default function ProjectInfo({
         hasBorder && "border-b border-b-subdued delay-[300ms]"
       }`}
     >
-      <Animate id={[elementId]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
+      <Animate id={[elementId]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" threshold={0.5} />
       <div class="flex-none font-medium text-2xl leadint-[1.4] mb-5 md:mb-7 lg:(pl-[126px] w-[375px])">
         <div class="flex flex-row gap-2 lg:(gap-0 flex-col w-[170px])">
           <span>{title}</span>

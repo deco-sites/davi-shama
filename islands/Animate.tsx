@@ -4,7 +4,8 @@ export type Props = {
     id: array,
     add?: array,
     remove?: array,
-    event?: 'pageLoad' | 'elementVisible'
+    event?: 'pageLoad' | 'elementVisible',
+    threshold?: float,
 }
 
 class Animate extends Component<Props> {
@@ -29,23 +30,21 @@ class Animate extends Component<Props> {
       let isVisible = false;
       const element = document?.getElementById(this.props.id[0]);
       const options = {
-        root: document,
-        rootMargin: '0px',
-        threshold: 0.6
+        threshold: this.props.threshold ? this.props.threshold : 0.2
       };
       const observer = new IntersectionObserver((entries, options) => {
         entries.forEach(entry => {
           if (entry.intersectionRatio > 0 && !isVisible) {
+            observer.unobserve(element);
             isVisible = !isVisible;
             this.props.remove.forEach(r => {
               element.classList.remove(r)
-              console.log("visível", element);
             });
             this.props.add.forEach(a => {
               element.classList.add(a)
             });
           }
-        });
+        }, options);
       }, options);
       observer.observe(element);
     }
