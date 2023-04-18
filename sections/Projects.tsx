@@ -1,5 +1,6 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Animate from "deco-sites/start/islands/Animate.tsx";
 
 export interface Project {
   /**
@@ -28,8 +29,11 @@ export default function Projects({
   sectionTitle,
   projects,
 }: Props) {
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+
   return (
-    <div class="mt-20 container mx-auto md:mt-[124px] lg:max-w-full">
+    <div id="projects" class={`${classes} mt-20 container mx-auto md:mt-[124px] lg:max-w-full delay-[800ms]`}>
+      <Animate id={["projects"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
       <div class="mt-1 hidden lg:block text-xs uppercase pb-3 border-b border-subdued">
         <div class="container mx-auto">{sectionTitle}</div>
       </div>
