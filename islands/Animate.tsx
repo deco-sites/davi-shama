@@ -16,13 +16,13 @@ class Animate extends Component<Props> {
 
   componentDidMount() {
     if (this.props.event !== 'elementVisible') {
-      this.props.id.forEach(e => {
-        this.props.remove.forEach(r => {
-          document?.getElementById(e).classList.remove(r)
+      this.props.id?.forEach(e => {
+        this.props.remove?.forEach(r => {
+          document?.getElementById(e)?.classList.remove(r)
         });
         if (this.props.add) {
-          this.props.add.forEach(a => {
-            document?.getElementById(e).classList.add(a)
+          this.props.add?.forEach(a => {
+            document?.getElementById(e)?.classList.add(a)
           });
         }
       });
@@ -33,14 +33,14 @@ class Animate extends Component<Props> {
         threshold: this.props.threshold ? this.props.threshold : 0.2
       };
       const observer = new IntersectionObserver((entries, options) => {
-        entries.forEach(entry => {
+        entries?.forEach(entry => {
           if (entry.intersectionRatio > 0 && !isVisible) {
             observer.unobserve(element);
             isVisible = !isVisible;
-            this.props.remove.forEach(r => {
+            this.props.remove?.forEach(r => {
               element.classList.remove(r)
             });
-            this.props.add.forEach(a => {
+            this.props.add?.forEach(a => {
               element.classList.add(a)
             });
           }
