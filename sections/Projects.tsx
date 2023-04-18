@@ -70,18 +70,18 @@ export default function Projects({
                     href={href}
                     class="flex flex-col gap-8 md:(flex-row items-center gap-16) lg:(group container py-7 mx-auto gap-0)"
                   >
-                    <div class="lg:(fixed z-[2] right-16 bottom-16 hidden group-hover:block transition ease-in duration-200)">
+                    <div class="lg:(fixed z-[2] right-16 bottom-16 hidden group-hover:block)">
                       <div class="hidden lg:block w-[378px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
                       <div class="flex-none relative md:w-[375px] lg:w-[476px]">
                         <Picture>
                           <Source
-                            media="(min-width: 768px)"
+                            media="(max-width: 767px)"
                             src={image}
                             width={375}
                             height={375}
                           />
                           <Source
-                            media="(min-width: 1025px)"
+                            media="(max-width: 1024px)"
                             src={image}
                             width={476}
                             height={476}
@@ -90,7 +90,6 @@ export default function Projects({
                             src={image}
                             alt={label}
                             decoding="async"
-                            loading="lazy"
                             srcset={`${image} 2x`}
                           />
                         </Picture>
