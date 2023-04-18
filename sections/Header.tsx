@@ -1,6 +1,6 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import ActiveLink from "deco-sites/start/islands/ActiveLink.tsx"
-import Animate from "deco-sites/start/islands/Animate.tsx";
+import ActiveLink from "deco-sites/davi-shama/islands/ActiveLink.tsx"
+import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 export interface Link {
   label: string;

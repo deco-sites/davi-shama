@@ -1,6 +1,6 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Animate from "deco-sites/start/islands/Animate.tsx";
+import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 
 export interface Paragraph {

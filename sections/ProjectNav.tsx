@@ -1,4 +1,4 @@
-import CurrentPage from "deco-sites/start/islands/CurrentPage.tsx"
+import CurrentPage from "deco-sites/davi-shama/islands/CurrentPage.tsx"
 
 export interface Props {
   pages: string[];

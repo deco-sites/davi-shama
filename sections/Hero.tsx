@@ -1,4 +1,4 @@
-import Animate from "deco-sites/start/islands/Animate.tsx";
+import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 export interface Props {
   hi: string;

@@ -1,4 +1,4 @@
-import HeaderBg from "deco-sites/start/islands/HeaderBg.tsx";
+import HeaderBg from "deco-sites/davi-shama/islands/HeaderBg.tsx";
 
 export interface Props {
     color?: string;
