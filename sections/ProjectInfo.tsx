@@ -1,5 +1,6 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Animate from "deco-sites/start/islands/Animate.tsx";
 
 export interface Props {
   title: string;
@@ -40,12 +41,17 @@ export default function ProjectInfo({
   hasBorder,
   removeGap,
 }: Props) {
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+  const elementId = `element${Math.floor(Math.random() * (100 - 10 + 1) + 10)}`
+
   return (
     <div
-      class={`py-12 md:py-20 lg:flex mx-5 md:(mx-auto max-w-[600px]) lg:(container px-0 py-[100px]) ${
-        hasBorder && "border-b border-b-subdued"
+      id={elementId}
+      class={`${classes} py-12 md:py-20 lg:flex mx-5 md:(mx-auto max-w-[600px]) lg:(container px-0 py-[100px]) ${
+        hasBorder && "border-b border-b-subdued delay-[300ms]"
       }`}
     >
+      <Animate id={[elementId]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" threshold={0.5} />
       <div class="flex-none font-medium text-2xl leadint-[1.4] mb-5 md:mb-7 lg:(pl-[126px] w-[375px])">
         <div class="flex flex-row gap-2 lg:(gap-0 flex-col w-[170px])">
           <span>{title}</span>

@@ -41,8 +41,9 @@ export default function ProjectHeader({
       >
       </style>
       <div class="flex-none flex items-center gap-3 text-xl mb-4 md:mb-5 lg:(mt-3 mb-0 pl-[125px] w-[375px] block)">
+        <Animate id={["projectTitle1", "projectTitle2", "projectTitle3", "projectCompany", "projectYear", "projectDescription"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
         {company == 'Miscellaneous' ? (
-          <div class="pb-[6px]">
+          <div id={["projectCompany"]} class={`${classes} delay-[500ms] pb-[6px]`}>
             <svg width="159" height="19" viewBox="0 0 159 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.824219 0.863281V17.9993H3.44022V5.56728L7.97622 17.9993H10.2802L14.9842 5.54328V17.9993H17.6482V0.863281H14.2402L9.22422 14.4953L4.35222 0.863281H0.824219Z" fill="url(#paint0_radial_334_1762)"/>
             <path d="M23.8292 0.863281H20.9972V3.57528H23.8292V0.863281ZM23.7812 5.51928H21.0452V17.9993H23.7812V5.51928Z" fill="url(#paint1_radial_334_1762)"/>
@@ -139,13 +140,12 @@ export default function ProjectHeader({
             </defs>
           </svg>          
           </div>
-        ) : <div class={`font-medium ${companyColor && `text-[${companyColor}]`}`}>{company}</div>}
-        <div class="text-smooth lg:mt-2">
+        ) : <div id={["projectCompany"]} class={`${classes} delay-[500ms] font-medium ${companyColor && `text-[${companyColor}]`}`}>{company}</div>}
+        <div id={["projectYear"]} class={`${classes} text-smooth lg:mt-2 delay-[700ms]`}>
           {year}
         </div>
       </div>
       <div>
-        <Animate id={["projectTitle1", "projectTitle2", "projectTitle3"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
         <div id="projectTitle" class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-3xl md:(text-5xl leading-[1.3]) lg:w-[600px]">
           <div class="md:hidden">{title}</div>
           <div class="hidden md:block">
@@ -156,7 +156,7 @@ export default function ProjectHeader({
         </div>
         {
             description && (
-              <div class="leading-[1.3] text-subdued text-xl mt-6 md:mt-10">
+              <div id={["projectDescription"]} class={`${classes} delay-[900ms] leading-[1.3] text-subdued text-xl mt-6 md:mt-10`}>
                 {description}
               </div>
             )

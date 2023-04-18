@@ -1,5 +1,6 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Animate from "deco-sites/start/islands/Animate.tsx";
 
 export interface Banner {
   alt: string;
@@ -36,12 +37,16 @@ export interface Props {
 export default function Projects({
   banners,
 }: Props) {
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+  const elementId = `element${Math.floor(Math.random() * (200 - 110 + 1) + 110)}`
+
   return (
-    <div class="container mx-auto mb-5 flex flex-col gap-5 md:(flex-row)">
+    <div id={elementId} class={`${classes} container mx-auto mb-5 flex flex-col gap-5 md:(flex-row)`}>
+      <Animate id={[elementId]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
       {
         banners.map(banner => (
           <div
-            class={`md:(items-center justify-center flex w-auto px-0)
+            class={`md:(items-center justify-center flex w-auto px-0) delay-[300ms]
             ${banner.bgColor ? `bg-[${banner.bgColor}]` : ''}
             ${banner.expand ? `flex-auto` : `flex-none`}
             ${banner.widthOnTablet ? `md:w-[${banner.widthOnTablet}]` : ''}

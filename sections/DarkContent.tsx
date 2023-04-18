@@ -1,5 +1,6 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Animate from "deco-sites/start/islands/Animate.tsx";
 
 export interface Props {
     title: string;
@@ -20,18 +21,22 @@ export interface Step {
 }
 
 export default function DarkContent({title, description, steps}: Props) {
+    const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+
     return (
         <div class="bg-[rgba(0,0,0,.9)] py-20 md:py-40 text-white">
             <div class="mx-5 md:(mx-auto max-w-[600px]) lg:(container)">
-                <div class="mb-16 md:mb-20 lg:(ml-[248px] mb-[124px])">
+                <Animate id={["researchTitle"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
+                <div id="researchTitle" class={`${classes} mb-16 md:mb-20 lg:(ml-[248px] mb-[124px]) delay-[100ms]`}>
                     <h2 class="text-[40px] tracking-[-0.005em] leading-[1.4] mb-5 md:mb-3">{title}</h2>
                     <div class="text-xl text-[rgba(255,255,255,.5)] tracking-[-0.005em] leading-[1.4] lg:w-[724px]">{description}</div>
                 </div>
                 <div class="flex flex-col gap-16 md:gap-20 lg:gap-[104px]">
-                    {steps.map((step) => {
+                    {steps.map((step, i) => {
                         return (
-                            <div class="flex flex-col gap-8 md:gap-10 lg:(flex-row gap-[144px] items-center)">
+                            <div id={`researchStep${i}`} class={`${classes} flex flex-col gap-8 md:gap-10 lg:(flex-row gap-[144px] items-center) delay-[100ms]`}>
                                 <div class="flex-none">
+                                    <Animate id={[`researchStep${i}`]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
                                     <Picture>
                                         <Source
                                             media="(min-width: 768px)"
