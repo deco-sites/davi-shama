@@ -14,7 +14,7 @@ export default function ColorBar({color}: Props) {
                     return <div class={`bg-[${c}]`}></div>
                 }) }
             </div>
-            <div id="colorBar" class={`w-full h-2 duration-[1500ms] ${color? `bg-[${color}]` : 'multicolor'}`} />
+            <div id="colorBar" class={`w-full h-2 duration-[50ms] ${color? `bg-[${color}]` : 'multicolor'}`} />
         </div>
     )
 }
