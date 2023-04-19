@@ -41,7 +41,7 @@ export default function Projects({
   const elementId = `element${Math.floor(Math.random() * (200 - 110 + 1) + 110)}`
 
   return (
-    <div id={elementId} class={`${classes} container mx-auto mb-5 flex flex-col gap-5 md:(flex-row)`}>
+    <div id={elementId} class={`${classes} container mx-auto md:mb-5 flex flex-col gap-5 md:(flex-row)`}>
       <Animate id={[elementId]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
       {
         banners.map(banner => (
