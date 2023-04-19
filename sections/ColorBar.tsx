@@ -8,13 +8,8 @@ export default function ColorBar({color}: Props) {
     const colors1 = ["#2C94C3", "#FFD631", "#00974A", "#E2625B", "#4C2C3A", "#FFB5DA"]
     return (
         <div class="fixed top-0 w-full z-10">
-            <div class="hidden">
-                <HeaderBg colors={colors1} />
-                { colors1.map(c => {
-                    return <div class={`bg-[${c}]`}></div>
-                }) }
-            </div>
-            <div id="colorBar" class={`w-full h-2 duration-[1500ms] ${color? `bg-[${color}]` : 'multicolor'}`} />
+            <HeaderBg colors={colors1} type={color ? 'single' : 'multi'} />
+            { color && <div id="colorBar" class={`relative z-2 w-full h-2 transition duration-[1500ms] ${color? `bg-[${color}]` : 'multicolor'}`} /> }
         </div>
     )
 }
