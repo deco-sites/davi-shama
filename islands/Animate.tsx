@@ -1,11 +1,11 @@
 import { Component } from "preact";
 
 export type Props = {
-    id: array,
-    add?: array,
-    remove?: array,
+    id: Array<string>,
+    add?: Array<string>,
+    remove?: Array<string>,
     event?: 'pageLoad' | 'elementVisible',
-    threshold?: float,
+    threshold?: number,
 }
 
 class Animate extends Component<Props> {
