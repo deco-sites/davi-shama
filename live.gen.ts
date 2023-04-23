@@ -9,7 +9,8 @@ import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/CurrentPage.tsx";
 import * as $$$$$1 from "./islands/HeaderBg.tsx";
 import * as $$$$$2 from "./islands/Animate.tsx";
-import * as $$$$$3 from "./islands/ActiveLink.tsx";
+import * as $$$$$3 from "./islands/Marquee.tsx";
+import * as $$$$$4 from "./islands/ActiveLink.tsx";
 import * as $$$$$$$$0 from "./sections/Projects.tsx";
 import * as $$$$$$$$1 from "./sections/ProjectHeader.tsx";
 import * as $$$$$$$$2 from "./sections/Hero.tsx";
@@ -66,7 +67,8 @@ const manifest = {
     "./islands/CurrentPage.tsx": $$$$$0,
     "./islands/HeaderBg.tsx": $$$$$1,
     "./islands/Animate.tsx": $$$$$2,
-    "./islands/ActiveLink.tsx": $$$$$3,
+    "./islands/Marquee.tsx": $$$$$3,
+    "./islands/ActiveLink.tsx": $$$$$4,
   },
   "sections": {
     "deco-sites/davi-shama/sections/Projects.tsx": $$$$$$$$0,

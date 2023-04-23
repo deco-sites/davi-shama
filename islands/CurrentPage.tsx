@@ -1,4 +1,5 @@
 import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
+import Marquee from "deco-sites/davi-shama/islands/Marquee.tsx";
 
 export interface Props {
   pages: string[];
@@ -15,8 +16,8 @@ export default function CurrentPage({
     })
   return (
     <div class="border-y border-[#D9D9D9] mt-10 py-[94px] md:(mt-[100px] py-[112px]) lg:(mt-[90px])">
-        <div id="navText" class={`${classes} w-full overflow-hidden text-[40px] md:text-[64px] delay-[200ms]`}>
-            <div class="w-[3000px] ml-[-96%] md:ml-[-50%]">go to next project — go to next project — go to next project — go to next project — go to next project — go to next project</div>
+        <div id="navText" class={`whitespace-nowrap flex w-full overflow-hidden text-[40px] md:text-[64px]`}>
+            <div class="">go to next project &nbsp;— &nbsp;go to next project &nbsp;— &nbsp;</div>
         </div>
         <div id="navButton" class={`${classes} mt-8 flex justify-center delay-[500ms]`}>
             <a
@@ -26,8 +27,8 @@ export default function CurrentPage({
                 Next Project
             </a>
         </div>
-        <Animate id={["navText"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" threshold={0.5} />
         <Animate id={["navButton"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" threshold={0.5} />
+        <Marquee id={["navText"]}/>
     </div>
   );
 }
