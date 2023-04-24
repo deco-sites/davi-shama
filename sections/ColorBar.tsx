@@ -5,7 +5,6 @@ export interface Props {
 }
   
 export default function ColorBar({colors}: Props) {
-    const colors1 = ["#2C94C3", "#FFD631", "#00974A", "#E2625B", "#4C2C3A", "#FFB5DA"]
     return (
         <div class="fixed top-0 w-full z-10">
             <HeaderBg colors={colors} type={colors ? 'single' : 'multi'} />
