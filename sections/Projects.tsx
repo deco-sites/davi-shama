@@ -75,13 +75,13 @@ export default function Projects({
                       <div class="flex-none relative md:w-[375px] lg:w-[476px]">
                         <Picture>
                           <Source
-                            media="(min-width: 767px)"
+                            media="(max-width: 1023px)"
                             src={image}
                             width={375}
                             height={375}
                           />
                           <Source
-                            media="(max-width: 1024px)"
+                            media="(min-width: 1024px)"
                             src={image}
                             width={476}
                             height={476}

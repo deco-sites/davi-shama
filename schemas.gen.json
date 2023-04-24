@@ -725,13 +725,6 @@
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "color": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Color"
-        },
         "colors": {
           "type": "array",
           "items": {
