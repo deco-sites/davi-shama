@@ -731,6 +731,13 @@
             "null"
           ],
           "title": "Color"
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Colors"
         }
       },
       "required": [],

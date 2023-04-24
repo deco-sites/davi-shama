@@ -1,7 +1,7 @@
 import { Component } from "preact";
 
 export type Props = {
-    colors: Array<string>,
+    colors?: Array<string>,
     type: 'single' | 'multi'
 }
 

@@ -13,12 +13,12 @@ class Marquee extends Component<Props> {
   componentDidMount() {
     function Marquee(selector, speed) {
         const parentSelector = document.getElementById(selector);
-        const clone = parentSelector.innerHTML;
-        const firstElement = parentSelector.children[0];
+        const clone = parentSelector?.innerHTML;
+        const firstElement = parentSelector?.children[0];
         let i = 0;
         console.log(firstElement);
-        parentSelector.insertAdjacentHTML('beforeend', clone);
-        parentSelector.insertAdjacentHTML('beforeend', clone);
+        parentSelector?.insertAdjacentHTML('beforeend', clone);
+        parentSelector?.insertAdjacentHTML('beforeend', clone);
       
         setInterval(function () {
           firstElement.style.marginLeft = `-${i}px`;
