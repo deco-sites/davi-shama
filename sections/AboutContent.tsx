@@ -69,14 +69,14 @@ export default function AboutContent({
         </Picture>
       </div>
       <div class="flex-auto">
-        <Animate id={["aboutTitle"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
+        <Animate id={["aboutTitle", "aboutText", "aboutButton"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
         <h1 id="aboutTitle" class={`${classes} text-3xl leading-[1.18] font-medium mb-4 md:(mb-7 text-5xl) delay-100`}>{title}</h1>
-        <div>
+        <div id="aboutText" class={`${classes} delay-[300ms]`}>
           {paragraphs.map((paragraph) => (
             <p class="mb-10 text-xl text-subdued leading-[1.7]">{paragraph.text}</p>
           ))}
         </div>
-        <div class="pt-2">
+        <div id="aboutButton" class={`${classes} pt-2 delay-[500ms]`}>
           <a
             href={button.href}
             target="_blank"
