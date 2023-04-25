@@ -2,7 +2,6 @@ import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 export interface Props {
   hi: string;
-  intro: string;
   animatedIntro?: {
     line1: string;
     line2: string;
@@ -13,7 +12,6 @@ export interface Props {
 
 export default function Hero({
   hi,
-  intro,
   animatedIntro,
   description,
 }: Props) {
@@ -26,11 +24,7 @@ export default function Hero({
         <div class="flex gap-5 items-stretch w-[640px] text-3xl leading-[1.25] md:leading-[1.25] md:text-5xl tracking-[-0.7%]">
           <div id="hiBar" class={`${classes} hidden md:block flex-none w-[6px] bg-black rounded-full delay-[800ms]`}></div>
           <div class="flex-auto">
-            <div class="md:hidden">
-              <span class="font-medium">{hi}</span>
-            </div>
-            <div class="md:hidden">{intro}</div>
-            <div class="hidden md:block">
+            <div>
               <div id="heroHi" class={`${classes} font-medium delay-100`}>{hi}</div>
               <div id="heroLine1" class={`${classes} delay-200`}>{animatedIntro?.line1}</div>
               <div id="heroLine2" class={`${classes} delay-300`}>{animatedIntro?.line2}</div>

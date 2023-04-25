@@ -340,10 +340,6 @@
           "type": "string",
           "title": "Hi"
         },
-        "intro": {
-          "type": "string",
-          "title": "Intro"
-        },
         "animatedIntro": {
           "type": "object",
           "properties": {
@@ -374,7 +370,6 @@
       },
       "required": [
         "hi",
-        "intro",
         "description"
       ],
       "title": "deco-sites/davi-shama/sections/Hero.tsx@Props"
