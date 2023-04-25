@@ -146,9 +146,9 @@ export default function ProjectHeader({
         </div>
       </div>
       <div>
-        <div id="projectTitle" class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-3xl md:(text-5xl leading-[1.3]) lg:w-[600px]">
-          <div class="md:hidden">{title}</div>
-          <div class="hidden md:block">
+        <div id="projectTitle" class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-[30px] md:(text-5xl leading-[1.3]) lg:w-[600px]">
+          <div class="hidden">{title}</div>
+          <div>
             {animatedTitle?.line1 && <div id="projectTitle1" class={`${classes} delay-200`}>{animatedTitle?.line1}</div>}
             {animatedTitle?.line2 && <div id="projectTitle2" class={`${classes} delay-300`}>{animatedTitle?.line2}</div>}
             {animatedTitle?.line3 && <div id="projectTitle3" class={`${classes} delay-[400ms]`}>{animatedTitle?.line3}</div>}
