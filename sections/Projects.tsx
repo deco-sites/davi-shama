@@ -32,7 +32,7 @@ export default function Projects({
   const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
 
   return (
-    <div id="projects" class={`${classes} mt-20 container mx-auto md:mt-[124px] lg:max-w-full delay-[800ms]`}>
+    <div id="projects" class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:mt-[144px] lg:max-w-full delay-[800ms]`}>
       <Animate id={["projects"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
       <div class="mt-1 hidden lg:block text-xs uppercase pb-3 border-b border-subdued">
         <div class="container mx-auto">{sectionTitle}</div>
@@ -71,14 +71,14 @@ export default function Projects({
                     class="flex flex-col gap-8 md:(flex-row items-center gap-16) lg:(group container py-7 mx-auto gap-0)"
                   >
                     <div class="lg:(fixed z-[2] right-[82px] bottom-16 hidden group-hover:block)">
-                      <div class="hidden lg:block w-[378px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
-                      <div class="flex-none relative md:w-[375px] lg:w-[476px]">
+                      <div class="hidden lg:block w-[375px] 2xl:w-[500px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
+                      <div class="flex-none relative md:w-[375px] lg:w-[476px] 2xl:w-[500px]">
                         <Picture>
                           <Source
-                            media="(max-width: 1023px)"
+                            media="(min-width: 1536px)"
                             src={image}
-                            width={375}
-                            height={375}
+                            width={500}
+                            height={500}
                           />
                           <Source
                             media="(min-width: 1024px)"

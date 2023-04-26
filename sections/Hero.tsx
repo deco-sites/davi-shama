@@ -28,7 +28,7 @@ export default function Hero({
     <>
       <Animate id={["heroHi", "heroLine1", "heroLine2", "heroLine3", "hiBar", "heroDesc"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
       <Animate id={["heroHiM", "heroLine1M", "heroLine2M", "heroLine3M", "heroLine4M"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
-      <div id="hero" class="container mx-auto mt-[96px] flex gap-[124px] pl-5 pr-12 lg:(container px-0)">
+      <div id="hero" class="container mx-auto mt-[96px] 2xl:mt-[136px] flex gap-[124px] pl-5 pr-12 lg:(container px-0)">
         <div class="flex gap-5 items-stretch w-[640px] text-3xl leading-[1.25] md:leading-[1.25] md:text-5xl tracking-[-0.7%]">
           <div id="hiBar" class={`${classes} hidden md:block flex-none w-[6px] bg-black rounded-full delay-[800ms]`}></div>
           <div class="flex-auto">
