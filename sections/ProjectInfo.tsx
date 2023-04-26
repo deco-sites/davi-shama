@@ -8,9 +8,14 @@ export interface Props {
   /**
    * @format textarea
    */
-  text?: Paragraph[];
-  metrics?: Metric[];
-  backedBy?: Brand[];
+  text?: Array<Paragraph>;
+  extraContent?: {
+    image?: LiveImage,
+    title?: string,
+    text?: Array<Paragraph>,
+  };
+  metrics?: Array<Metric>;
+  backedBy?: Array<Brand>;
   removeGap?: boolean;
   hasBorder?: boolean;
 }
@@ -36,6 +41,7 @@ export default function ProjectInfo({
   title,
   titleLine2,
   text,
+  extraContent,
   metrics,
   backedBy,
   hasBorder,
@@ -68,6 +74,46 @@ export default function ProjectInfo({
                     <p>{p.text}</p>
                   )
                 })
+              }
+            </div>
+          )
+        }
+        {
+          extraContent && (
+            <div class="flex-none text-xl gap-5 text-subdued flex flex-col leading-[1.7]">
+              {
+                extraContent.image && (
+                  <div class="mt-3 mb-11">
+                    <Picture>
+                      <Source
+                        src={extraContent.image}
+                      />
+                      <img
+                        src={extraContent.image}
+                        alt={extraContent.title}
+                        decoding="async"
+                        loading="lazy"
+                        srcset={`${extraContent.image} 2x`}
+                      />
+                    </Picture>
+                  </div>
+                )
+              }
+              {
+                extraContent.title && <div class="font-medium text-black">{extraContent.title}</div>
+              }
+              {
+                extraContent?.text.length > 0 && (
+                  <div class="flex-none text-xl gap-6 text-subdued flex flex-col leading-[1.7]">
+                    {
+                      extraContent?.text.map(p => {
+                        return (
+                          <p>{p.text}</p>
+                        )
+                      })
+                    }
+                  </div>
+                )
               }
             </div>
           )

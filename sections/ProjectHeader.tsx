@@ -2,14 +2,12 @@ import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 export interface Props {
   title: string;
-  /**
-   * @format textarea
-   */
   animatedTitle?: {
     line1?: string,
     line2?: string,
     line3?: string,
   };
+  titleWidth?: string;
   description?: string;
   year: string;
   company: string;
@@ -19,6 +17,7 @@ export interface Props {
 
 export default function ProjectHeader({
   title,
+  titleWidth = "600px",
   animatedTitle,
   description,
   year,
@@ -146,7 +145,7 @@ export default function ProjectHeader({
         </div>
       </div>
       <div>
-        <div id="projectTitle" class="flex-none font-medium leading-[1.3] tracking-[-0.7%] text-[30px] md:(text-5xl leading-[1.3]) lg:w-[600px]">
+        <div id="projectTitle" class={`flex-none font-medium leading-[1.3] tracking-[-0.7%] text-[30px] md:(text-5xl leading-[1.3]) lg:w-[${titleWidth}]`}>
           <div class="hidden">{title}</div>
           <h1>
             {animatedTitle?.line1 && <div id="projectTitle1" class={`${classes} delay-200`}>{animatedTitle?.line1}</div>}
