@@ -68,7 +68,6 @@ export default function Projects({
                 src={banner.image}
                 alt={banner.alt}
                 decoding="async"
-                loading="lazy"
                 srcset={`${banner.image} 2x`}
               />
             </Picture>
