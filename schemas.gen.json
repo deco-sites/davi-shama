@@ -696,6 +696,30 @@
       ],
       "title": "deco-sites/davi-shama/sections/Spacer.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Text"
+        },
+        "dividerColor": {
+          "type": "string",
+          "title": "Divider Color"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "dividerColor"
+      ],
+      "title": "deco-sites/davi-shama/sections/ProjectHighlight.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Step": {
       "type": "object",
       "properties": {
@@ -1515,6 +1539,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4": {
+      "title": "deco-sites/davi-shama/sections/ProjectHighlight.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectHighlight.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectHighlight.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==": {
       "title": "deco-sites/davi-shama/sections/DarkContent.tsx",
       "type": "object",
@@ -1977,6 +2022,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA=="

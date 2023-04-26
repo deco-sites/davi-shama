@@ -17,13 +17,14 @@ import * as $$$$$$$$2 from "./sections/Hero.tsx";
 import * as $$$$$$$$3 from "./sections/AboutContent.tsx";
 import * as $$$$$$$$4 from "./sections/Banner.tsx";
 import * as $$$$$$$$5 from "./sections/Spacer.tsx";
-import * as $$$$$$$$6 from "./sections/DarkContent.tsx";
-import * as $$$$$$$$7 from "./sections/ColorBar.tsx";
-import * as $$$$$$$$8 from "./sections/ProjectInfo.tsx";
-import * as $$$$$$$$9 from "./sections/Footer.tsx";
-import * as $$$$$$$$10 from "./sections/Head.tsx";
-import * as $$$$$$$$11 from "./sections/Header.tsx";
-import * as $$$$$$$$12 from "./sections/ProjectNav.tsx";
+import * as $$$$$$$$6 from "./sections/ProjectHighlight.tsx";
+import * as $$$$$$$$7 from "./sections/DarkContent.tsx";
+import * as $$$$$$$$8 from "./sections/ColorBar.tsx";
+import * as $$$$$$$$9 from "./sections/ProjectInfo.tsx";
+import * as $$$$$$$$10 from "./sections/Footer.tsx";
+import * as $$$$$$$$11 from "./sections/Head.tsx";
+import * as $$$$$$$$12 from "./sections/Header.tsx";
+import * as $$$$$$$$13 from "./sections/ProjectNav.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -77,13 +78,14 @@ const manifest = {
     "deco-sites/davi-shama/sections/AboutContent.tsx": $$$$$$$$3,
     "deco-sites/davi-shama/sections/Banner.tsx": $$$$$$$$4,
     "deco-sites/davi-shama/sections/Spacer.tsx": $$$$$$$$5,
-    "deco-sites/davi-shama/sections/DarkContent.tsx": $$$$$$$$6,
-    "deco-sites/davi-shama/sections/ColorBar.tsx": $$$$$$$$7,
-    "deco-sites/davi-shama/sections/ProjectInfo.tsx": $$$$$$$$8,
-    "deco-sites/davi-shama/sections/Footer.tsx": $$$$$$$$9,
-    "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$10,
-    "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$11,
-    "deco-sites/davi-shama/sections/ProjectNav.tsx": $$$$$$$$12,
+    "deco-sites/davi-shama/sections/ProjectHighlight.tsx": $$$$$$$$6,
+    "deco-sites/davi-shama/sections/DarkContent.tsx": $$$$$$$$7,
+    "deco-sites/davi-shama/sections/ColorBar.tsx": $$$$$$$$8,
+    "deco-sites/davi-shama/sections/ProjectInfo.tsx": $$$$$$$$9,
+    "deco-sites/davi-shama/sections/Footer.tsx": $$$$$$$$10,
+    "deco-sites/davi-shama/sections/Head.tsx": $$$$$$$$11,
+    "deco-sites/davi-shama/sections/Header.tsx": $$$$$$$$12,
+    "deco-sites/davi-shama/sections/ProjectNav.tsx": $$$$$$$$13,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {
