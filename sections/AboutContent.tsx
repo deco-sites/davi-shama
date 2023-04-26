@@ -45,18 +45,18 @@ export default function AboutContent({
   const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
 
   return (
-    <div class="mx-auto px-5 mt-16 md:(mt-20 w-[600px]) lg:(container px-[212px] flex px-24 mt-[138px])">
+    <div class="mx-auto px-5 mt-16 md:(mt-20 w-[600px]) lg:(container px-[212px] flex px-24 mt-[138px]) 2xl:(mt-[120px] mb-[40px])">
       <div class="flex-none flex justify-center mb-16 lg:(block w-[425px])">
         <Picture>
           <Source
             media="(max-width: 767px)"
             src={picture}
-            width={228}
-            height={213}
+            width={212}
+            height={212}
           />
           <Source
             src={picture}
-            width={278}
+            width={260}
             height={260}
           />
           <img
