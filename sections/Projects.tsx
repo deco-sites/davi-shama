@@ -70,7 +70,7 @@ export default function Projects({
                     href={href}
                     class="flex flex-col gap-8 md:(flex-row items-center gap-16) lg:(group container py-7 mx-auto gap-0)"
                   >
-                    <div class="lg:(fixed z-[2] right-[82px] bottom-16 hidden group-hover:block)">
+                    <div class="lg:(fixed z-[2] right-[90px] bottom-16 hidden group-hover:block)">
                       <div class="hidden lg:block w-[375px] 2xl:w-[500px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
                       <div class="flex-none relative md:w-[375px] lg:w-[476px] 2xl:w-[500px]">
                         <Picture>
@@ -96,11 +96,11 @@ export default function Projects({
                       </div>
                     </div>
                     <div class="flex flex-col px-5 md:px-0 gap-1 text-2xl lg:(flex-row flex-row-reverse text-3xl)">
-                      <div class="flex items-center gap-2 leading-[1.18]">
-                        <div class="flex-none lg:w-[244px] text-subsubdued">
+                      <div class="flex items-center gap-2 leading-[1.18] text-subsubdued group-hover:text-[#4d4c4d]">
+                        <div class="flex-none lg:w-[244px]">
                           {company}
                         </div>
-                        <div class="flex-auto text-subsubdued">{year}</div>
+                        <div class="flex-auto">{year}</div>
                       </div>
                       <div class="flex-none leading-[1.4] lg:(w-[745px] leading-[1.18])">{label}</div>
                     </div>
