@@ -41,10 +41,9 @@ export default function Projects({
   const elementId = `element${Math.floor(Math.random() * (200 - 110 + 1) + 110)}`
 
   return (
-    <div id={elementId} class={`${classes} container mx-auto md:mb-5 flex flex-col gap-5 md:(flex-row)`}>
-      <Animate id={[elementId]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
+    <div class={`container mx-auto md:mb-5 flex flex-col gap-5 md:(flex-row)`}>
       {
-        banners.map(banner => (
+        banners.map((banner, i) => (
           <div
             class={`md:(items-center justify-center flex w-auto px-0) delay-[300ms]
             ${banner.bgColor ? `bg-[${banner.bgColor}]` : ''}
@@ -60,17 +59,20 @@ export default function Projects({
             ${`md:px-[${banner.padding?.md?.xAxis ? banner.padding.md.xAxis : '0'}]`}
             ${`lg:px-[${banner.padding?.lg?.xAxis ? banner.padding.lg.xAxis : '0'}]`}
           `}>
-            <Picture>
-              <Source
-                src={banner.image}
-              />
-              <img
-                src={banner.image}
-                alt={banner.alt}
-                decoding="async"
-                srcset={`${banner.image} 2x`}
-              />
-            </Picture>
+            <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
+            <div id={elementId + i} class={`${classes}`}>
+              <Picture>
+                <Source
+                  src={banner.image}
+                />
+                <img
+                  src={banner.image}
+                  alt={banner.alt}
+                  decoding="async"
+                  srcset={`${banner.image} 2x`}
+                />
+              </Picture>
+            </div>
           </div>
         ))
       }
