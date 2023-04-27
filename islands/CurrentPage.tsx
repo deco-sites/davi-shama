@@ -22,7 +22,7 @@ export default function CurrentPage({
         <div id="navButton" class={`${classes} mt-8 flex justify-center delay-[100ms]`}>
             <a
                 href={next}
-                class="inline-block bg-black text-white px-[25px] py-[13px] font-medium border-[3px] border-black hover:(text-black bg-transparent) duration-200"
+                class="inline-block bg-black text-white px-[25px] py-[13px] font-medium border-[3px] border-black md:hover:(text-black bg-transparent) duration-200"
             >
                 Next Project
             </a>
