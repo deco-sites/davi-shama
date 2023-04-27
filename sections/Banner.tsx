@@ -41,7 +41,7 @@ export default function Projects({
   const elementId = `element${Math.floor(Math.random() * (200 - 110 + 1) + 110)}`
 
   return (
-    <div class={`container mx-auto md:mb-5 flex flex-col gap-5 md:(flex-row)`}>
+    <div class={`container mx-auto mb-5 flex flex-col gap-5 md:(flex-row)`}>
       {
         banners.map((banner, i) => (
           <div
