@@ -45,7 +45,7 @@ export default function Projects({
                 <div class="hidden lg:block border-b border-subdued text-subsubdued">
                   <div
                     href={href}
-                    class="group relative items-center py-7 container mx-auto"
+                    class="relative items-center py-7 container mx-auto"
                   >
                     <div class="flex text-[32px]">
                       <div class="flex-none w-[745px] flex gap-4 items-center">
@@ -70,23 +70,26 @@ export default function Projects({
                     href={href}
                     class="flex flex-col gap-8 md:(flex-row items-center gap-16) lg:(group container py-7 mx-auto gap-0)"
                   >
-                    <div class="lg:(fixed z-[2] right-[90px] bottom-16 hidden group-hover:block)">
+                    <div class="lg:(fixed right-[90px] bottom-16 w-0 h-0 group-hover:(w-auto h-auto) overflow-hidden z-10)">
                       <div class="hidden lg:block w-[375px] 2xl:w-[500px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
                       <div class="flex-none relative md:w-[375px] lg:w-[476px] 2xl:w-[500px]">
                         <Picture>
                           <Source
+                            class="scale-125 group-hover:(duration-[90ms] ease-out scale-100)"
                             media="(min-width: 1536px)"
                             src={image}
                             width={500}
                             height={500}
                           />
                           <Source
+                            class="scale-125 group-hover:(duration-[90ms] ease-out scale-100)"
                             media="(min-width: 1024px)"
                             src={image}
                             width={476}
                             height={476}
                           />
                           <img
+                            class="scale-125 group-hover:(duration-[90ms] ease-out scale-100)"
                             src={image}
                             alt={label}
                             decoding="async"
