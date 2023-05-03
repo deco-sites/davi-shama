@@ -21,6 +21,17 @@ export default function HeadComponent({
 }: Props) {
   return (
     <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M78NQSSSGT"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html:
+            `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M78NQSSSGT');`,
+        }}
+      >
+      </script>
       <title>{title}</title>
       <meta name="theme-color" content={themeColor}></meta>
       <meta name="description" content={description} />
