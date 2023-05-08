@@ -38,7 +38,7 @@ export default function Projects({
   banners,
 }: Props) {
   const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
-  const elementId = `element${Math.floor(Math.random() * (200 - 110 + 1) + 110)}`
+  const elementId = `element${Math.floor(Math.random() * Date.now())}`
 
   return (
     <div class={`container mx-auto mb-5 flex flex-col gap-5 md:(flex-row)`}>

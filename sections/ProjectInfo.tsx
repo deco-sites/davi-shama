@@ -48,7 +48,7 @@ export default function ProjectInfo({
   removeGap,
 }: Props) {
   const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
-  const elementId = `element${Math.floor(Math.random() * (100 - 10 + 1) + 10)}`
+  const elementId = `element${Math.floor(Math.random() * Date.now())}`
 
   return (
     <div
