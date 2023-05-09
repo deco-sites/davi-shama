@@ -28,6 +28,7 @@ export interface Banner {
   }
   bgColor?: string;
   widthOnTablet?: string;
+  animationTrigger?: "elementVisible" | "pageLoad"
 }
 
 export interface Props {
@@ -59,7 +60,7 @@ export default function Projects({
             ${`md:px-[${banner.padding?.md?.xAxis ? banner.padding.md.xAxis : '0'}]`}
             ${`lg:px-[${banner.padding?.lg?.xAxis ? banner.padding.lg.xAxis : '0'}]`}
           `}>
-            <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="elementVisible" />
+            <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event={banner.animationTrigger ? banner.animationTrigger : 'elementVisible'} />
             <div id={elementId + i} class={`${classes}`}>
               <Picture>
                 <Source

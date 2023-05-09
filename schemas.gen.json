@@ -656,6 +656,20 @@
             "null"
           ],
           "title": "Width On Tablet"
+        },
+        "animationTrigger": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "elementVisible"
+            },
+            {
+              "type": "string",
+              "const": "pageLoad"
+            }
+          ],
+          "type": "string",
+          "title": "Animation Trigger"
         }
       },
       "required": [
