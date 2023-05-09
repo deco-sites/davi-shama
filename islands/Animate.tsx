@@ -4,7 +4,7 @@ export type Props = {
     id: Array<string>,
     add?: Array<string>,
     remove?: Array<string>,
-    event?: 'pageLoad' | 'elementVisible',
+    event?: 'pageLoad' | 'elementVisible' | 'imageLoad',
     threshold?: number,
 }
 
@@ -15,7 +15,33 @@ class Animate extends Component<Props> {
   }
 
   componentDidMount() {
-    if (this.props.event !== 'elementVisible') {
+    if (this.props.event === 'imageLoad') {
+      this.props.id?.forEach(e => {
+        let img = document?.getElementById(e)
+
+        if (img?.complete) {
+          this.props.remove?.forEach(r => {
+            img?.classList.remove(r)
+          });
+          if (this.props.add) {
+            this.props.add?.forEach(a => {
+              img?.classList.add(a)
+            });
+          }          
+        }
+
+        img?.addEventListener('load', () => {
+          this.props.remove?.forEach(r => {
+            img?.classList.remove(r)
+          });
+          if (this.props.add) {
+            this.props.add?.forEach(a => {
+              img?.classList.add(a)
+            });
+          }          
+        })  
+      });      
+    } else if (this.props.event !== 'elementVisible') {
       this.props.id?.forEach(e => {
         this.props.remove?.forEach(r => {
           document?.getElementById(e)?.classList.remove(r)

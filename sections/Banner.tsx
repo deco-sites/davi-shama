@@ -28,7 +28,7 @@ export interface Banner {
   }
   bgColor?: string;
   widthOnTablet?: string;
-  animationTrigger?: "elementVisible" | "pageLoad";
+  animationTrigger?: "elementVisible" | "pageLoad" | "imageLoad";
   preload?: boolean;
 }
 
@@ -62,12 +62,13 @@ export default function Projects({
             ${`lg:px-[${banner.padding?.lg?.xAxis ? banner.padding.lg.xAxis : '0'}]`}
           `}>
             <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event={banner.animationTrigger ? banner.animationTrigger : 'elementVisible'} />
-            <div id={elementId + i} class={`${classes} delay-[300ms]`}>
-              <Picture preload={banner.preload}>
+            <div>
+              <Picture>
                 <Source
                   src={banner.image}
                 />
                 <img
+                  preload={banner.preload} id={elementId + i} class={`${classes} delay-[300ms]`}
                   src={banner.image}
                   alt={banner.alt}
                   decoding="async"
