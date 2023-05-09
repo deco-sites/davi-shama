@@ -40,7 +40,7 @@ export default function ProjectHeader({
       >
       </style>
       <Animate id={["projectTitle1", "projectTitle2", "projectTitle3", "projectCompany", "projectYear", "projectDescription"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
-      <div class="flex-none flex items-center gap-3 text-xl mb-4 md:mb-5 lg:(mt-3 mb-0 pl-[125px] w-[375px] block)">
+      <div class="flex-none flex items-center gap-3 text-xl mb-4 md:mb-5 lg:(text-2xl mt-3 mb-0 pl-[125px] w-[375px] block)">
         {company == 'Miscellaneous' ? (
           <div id={["projectCompany"]} class={`${classes} delay-[500ms] pb-[6px]`}>
             <svg width="159" height="19" viewBox="0 0 159 19" fill="none" xmlns="http://www.w3.org/2000/svg">
