@@ -28,7 +28,8 @@ export interface Banner {
   }
   bgColor?: string;
   widthOnTablet?: string;
-  animationTrigger?: "elementVisible" | "pageLoad"
+  animationTrigger?: "elementVisible" | "pageLoad";
+  preload?: boolean;
 }
 
 export interface Props {
@@ -62,7 +63,7 @@ export default function Projects({
           `}>
             <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event={banner.animationTrigger ? banner.animationTrigger : 'elementVisible'} />
             <div id={elementId + i} class={`${classes} delay-[300ms]`}>
-              <Picture preload>
+              <Picture preload={banner.preload}>
                 <Source
                   src={banner.image}
                 />

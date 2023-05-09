@@ -670,6 +670,13 @@
           ],
           "type": "string",
           "title": "Animation Trigger"
+        },
+        "preload": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Preload"
         }
       },
       "required": [
