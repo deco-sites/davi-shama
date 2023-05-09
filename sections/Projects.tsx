@@ -75,21 +75,21 @@ export default function Projects({
                       <div class="flex-none relative md:w-[375px] lg:w-[476px] 2xl:w-[500px]">
                         <Picture>
                           <Source
-                            class="md:scale-125 group-hover:(duration-[90ms] ease-out scale-100)"
+                            class="lg:(scale-125 group-hover:(duration-[90ms] ease-out scale-100))"
                             media="(min-width: 1536px)"
                             src={image}
                             width={500}
                             height={500}
                           />
                           <Source
-                            class="md:scale-125 group-hover:(duration-[90ms] ease-out scale-100)"
+                            class="lg:(scale-125 group-hover:(duration-[90ms] ease-out scale-100))"
                             media="(min-width: 1024px)"
                             src={image}
                             width={476}
                             height={476}
                           />
                           <img
-                            class="md:scale-125 group-hover:(duration-[90ms] ease-out scale-100)"
+                            class="lg:(scale-125 group-hover:(duration-[90ms] ease-out scale-100))"
                             src={image}
                             alt={label}
                             decoding="async"
