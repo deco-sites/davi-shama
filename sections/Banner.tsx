@@ -46,7 +46,7 @@ export default function Projects({
       {
         banners.map((banner, i) => (
           <div
-            class={`md:(items-center justify-center flex w-full px-0) delay-[300ms]
+            class={`md:(items-center justify-center flex w-full px-0)
             ${banner.bgColor ? `bg-[${banner.bgColor}]` : ''}
             ${banner.expand ? `flex-auto` : `flex-none`}
             ${banner.widthOnTablet ? `md:w-[${banner.widthOnTablet}]` : ''}
@@ -61,8 +61,8 @@ export default function Projects({
             ${`lg:px-[${banner.padding?.lg?.xAxis ? banner.padding.lg.xAxis : '0'}]`}
           `}>
             <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event={banner.animationTrigger ? banner.animationTrigger : 'elementVisible'} />
-            <div id={elementId + i} class={`${classes}`}>
-              <Picture>
+            <div id={elementId + i} class={`${classes} delay-[300ms]`}>
+              <Picture preload>
                 <Source
                   src={banner.image}
                 />
