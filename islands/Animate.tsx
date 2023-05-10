@@ -17,26 +17,27 @@ class Animate extends Component<Props> {
   componentDidMount() {
     if (this.props.event === 'imageLoad') {
       this.props.id?.forEach(e => {
-        let img = document?.getElementById(e)
+        let container = document?.getElementById(e)
+        let img = container?.getElementsByTagName('img')[0]
 
         if (img?.complete) {
           this.props.remove?.forEach(r => {
-            img?.classList.remove(r)
+            container?.classList.remove(r)
           });
           if (this.props.add) {
             this.props.add?.forEach(a => {
-              img?.classList.add(a)
+              container?.classList.add(a)
             });
           }          
         }
 
         img?.addEventListener('load', () => {
           this.props.remove?.forEach(r => {
-            img?.classList.remove(r)
+            container?.classList.remove(r)
           });
           if (this.props.add) {
             this.props.add?.forEach(a => {
-              img?.classList.add(a)
+              container?.classList.add(a)
             });
           }          
         })  

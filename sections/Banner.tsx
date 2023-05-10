@@ -47,7 +47,8 @@ export default function Projects({
       {
         banners.map((banner, i) => (
           <div
-            class={`md:(items-center justify-center flex w-full px-0)
+            id={elementId + i}
+            class={`${classes} delay-[300ms] md:(items-center justify-center flex w-full px-0)
             ${banner.bgColor ? `bg-[${banner.bgColor}]` : ''}
             ${banner.expand ? `flex-auto` : `flex-none`}
             ${banner.widthOnTablet ? `md:w-[${banner.widthOnTablet}]` : ''}
@@ -68,7 +69,7 @@ export default function Projects({
                   src={banner.image}
                 />
                 <img
-                  preload={banner.preload} id={elementId + i} class={`${classes} delay-[300ms]`}
+                  preload={banner.preload}
                   src={banner.image}
                   alt={banner.alt}
                   decoding="async"
