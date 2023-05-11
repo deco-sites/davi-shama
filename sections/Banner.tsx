@@ -104,7 +104,7 @@ export default function Projects({
                 playsInline={true}
                 autoPlay={true}
                 muted={true}
-                width={600}
+                class="w-full"
                 loading="eager"
               >
                 {banner.videoWebm?.video &&
