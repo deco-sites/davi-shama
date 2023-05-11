@@ -1,10 +1,20 @@
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import {
+  Image as LiveImage,
+  Video as LiveVideo,
+} from "deco-sites/std/components/types.ts";
+import Video from "deco-sites/std/components/Video.tsx";
 import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 export interface Banner {
   alt: string;
   image?: LiveImage;
+  videoMp4?: {
+    video?: LiveVideo;
+  };
+  videoWebm?: {
+    video?: LiveVideo;
+  };
   expand?: boolean;
   /**
    * @description Also adds a 30px mobile padding to x axis
@@ -62,8 +72,33 @@ export default function Projects({
             ${`md:px-[${banner.padding?.md?.xAxis ? banner.padding.md.xAxis : '0'}]`}
             ${`lg:px-[${banner.padding?.lg?.xAxis ? banner.padding.lg.xAxis : '0'}]`}
           `}>
-            <Animate id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event={banner.animationTrigger ? banner.animationTrigger : 'elementVisible'} />
-            <div>
+            <Animate type={banner.videoMp4?.video ? 'video' : 'img'} id={[elementId + i]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event={banner.animationTrigger ? banner.animationTrigger : 'elementVisible'} />
+            {
+              banner.videoMp4?.video &&
+              <Video
+                src={banner.videoMp4.video}
+                preload={banner.preload}
+                loop={true}
+                playsInline={true}
+                autoPlay={true}
+                muted={true}
+                width={600}
+              >
+                {
+                  banner.videoWebm?.video &&
+                    <Source
+                      src={banner.videoWebm.video}
+                      type="video/webm"
+                    />
+                }
+                <Source
+                  src={banner.videoMp4.video}
+                  type="video/mp4"
+                />
+              </Video>
+            }
+            {
+              banner.image && !banner.videoMp4?.video &&
               <Picture>
                 <Source
                   src={banner.image}
@@ -76,7 +111,7 @@ export default function Projects({
                   srcset={`${banner.image} 2x`}
                 />
               </Picture>
-            </div>
+            }
           </div>
         ))
       }

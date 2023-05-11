@@ -533,6 +533,11 @@
       ],
       "title": "deco-sites/davi-shama/sections/AboutContent.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Video": {
+      "type": "string",
+      "format": "video-uri",
+      "title": "Video"
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g=@Banner": {
       "type": "object",
       "properties": {
@@ -543,6 +548,28 @@
         "image": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
+        },
+        "videoMp4": {
+          "type": "object",
+          "properties": {
+            "video": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Video",
+              "title": "Video"
+            }
+          },
+          "required": [],
+          "title": "Video Mp4"
+        },
+        "videoWebm": {
+          "type": "object",
+          "properties": {
+            "video": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Video",
+              "title": "Video"
+            }
+          },
+          "required": [],
+          "title": "Video Webm"
         },
         "expand": {
           "type": [

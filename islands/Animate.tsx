@@ -6,6 +6,7 @@ export type Props = {
     remove?: Array<string>,
     event?: 'pageLoad' | 'elementVisible' | 'imageLoad',
     threshold?: number,
+    type?: 'video' | 'img',
 }
 
 class Animate extends Component<Props> {
@@ -18,29 +19,42 @@ class Animate extends Component<Props> {
     if (this.props.event === 'imageLoad') {
       this.props.id?.forEach(e => {
         let container = document?.getElementById(e)
-        let img = container?.getElementsByTagName('img')[0]
+        let img = container?.getElementsByTagName(this.props.type)[0]
 
-        if (img?.complete) {
-          this.props.remove?.forEach(r => {
-            container?.classList.remove(r)
-          });
-          if (this.props.add) {
-            this.props.add?.forEach(a => {
-              container?.classList.add(a)
+        if (this.props.type == 'video') {
+          img.addEventListener("canplay", () => {
+            this.props.remove?.forEach(r => {
+              container?.classList.remove(r)
             });
-          }          
+            if (this.props.add) {
+              this.props.add?.forEach(a => {
+                container?.classList.add(a)
+              });
+            }
+          });
+        } else {
+          if (img?.complete) {
+            this.props.remove?.forEach(r => {
+              container?.classList.remove(r)
+            });
+            if (this.props.add) {
+              this.props.add?.forEach(a => {
+                container?.classList.add(a)
+              });
+            }
+          }
+  
+          img?.addEventListener('load', () => {
+            this.props.remove?.forEach(r => {
+              container?.classList.remove(r)
+            });
+            if (this.props.add) {
+              this.props.add?.forEach(a => {
+                container?.classList.add(a)
+              });
+            }          
+          });  
         }
-
-        img?.addEventListener('load', () => {
-          this.props.remove?.forEach(r => {
-            container?.classList.remove(r)
-          });
-          if (this.props.add) {
-            this.props.add?.forEach(a => {
-              container?.classList.add(a)
-            });
-          }          
-        })  
       });      
     } else if (this.props.event !== 'elementVisible') {
       this.props.id?.forEach(e => {
