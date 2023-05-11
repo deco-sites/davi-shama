@@ -47,26 +47,29 @@ export default function AboutContent({
   return (
     <div class="mx-auto px-5 mt-16 md:(mt-20 w-[600px]) lg:(container px-[212px] flex px-24 mt-[138px]) 2xl:(mt-[120px] mb-[40px])">
       <div class="flex-none flex justify-center mb-16 lg:(block w-[425px])">
-        <Picture>
-          <Source
-            media="(max-width: 767px)"
-            src={picture}
-            width={212}
-            height={212}
-          />
-          <Source
-            src={picture}
-            width={260}
-            height={260}
-          />
-          <img
-            src={picture}
-            alt={title}
-            decoding="async"
-            loading="lazy"
-            srcset={`${picture} 2x`}
-          />
-        </Picture>
+        <div id="profilePic" class={`${classes} delay-100`}>
+          <Animate id={["profilePic"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} event="imageLoad" type="img" />
+          <Picture>
+            <Source
+              media="(max-width: 767px)"
+              src={picture}
+              width={212}
+              height={212}
+            />
+            <Source
+              src={picture}
+              width={260}
+              height={260}
+            />
+            <img
+              src={picture}
+              alt={title}
+              decoding="async"
+              loading="lazy"
+              srcset={`${picture} 2x`}
+            />
+          </Picture>
+        </div>
       </div>
       <div class="flex-auto">
         <Animate id={["aboutTitle", "aboutText", "aboutButton"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
