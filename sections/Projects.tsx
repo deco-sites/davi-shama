@@ -29,11 +29,17 @@ export default function Projects({
   sectionTitle,
   projects,
 }: Props) {
-  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1";
 
   return (
-    <div id="projects" class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:mt-[144px] lg:max-w-full delay-[800ms]`}>
-      <Animate id={["projects"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />
+    <div
+      id="projects"
+      class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:mt-[144px] lg:max-w-full delay-[800ms]`}
+    >
+      <Animate
+        id={["projects"]}
+        remove={["opacity-0", "translate-y-5", "skew-y-1"]}
+      />
       <div class="mt-1 hidden lg:block text-xs uppercase pb-3 border-b border-subdued">
         <div class="container mx-auto">{sectionTitle}</div>
       </div>
@@ -71,7 +77,8 @@ export default function Projects({
                     class="flex flex-col gap-8 md:(flex-row items-center gap-16) lg:(group container py-7 mx-auto gap-0)"
                   >
                     <div class="lg:(fixed right-[90px] bottom-16 w-0 h-0 group-hover:(w-auto h-auto) overflow-hidden z-10)">
-                      <div class="hidden lg:block w-[375px] 2xl:w-[500px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black"></div>
+                      <div class="hidden lg:block w-[375px] 2xl:w-[500px] h-[64px] left-[49px] bottom-5 filter blur-2xl opacity-30 absolute bg-black">
+                      </div>
                       <div class="flex-none relative md:w-[375px] lg:w-[476px] 2xl:w-[500px]">
                         <Picture>
                           <Source
@@ -105,7 +112,9 @@ export default function Projects({
                         </div>
                         <div class="flex-auto">{year}</div>
                       </div>
-                      <div class="flex-none leading-[1.4] lg:(w-[745px] leading-[1.18])">{label}</div>
+                      <div class="flex-none leading-[1.4] lg:(w-[745px] leading-[1.18])">
+                        {label}
+                      </div>
                     </div>
                   </a>
                 </div>

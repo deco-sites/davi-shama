@@ -1,5 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import ActiveLink from "deco-sites/davi-shama/islands/ActiveLink.tsx"
+import ActiveLink from "deco-sites/davi-shama/islands/ActiveLink.tsx";
 import Animate from "deco-sites/davi-shama/islands/Animate.tsx";
 
 export interface Link {
@@ -20,14 +20,26 @@ export default function Header({
   hasColorBar,
   animateHeader,
 }: Props) {
-  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1"
+  const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1";
 
   return (
     <div>
-      {animateHeader && <Animate id={["logo", "menuLink"]} remove={["opacity-0", "translate-y-5", "skew-y-1"]} />}
-      <header class={`flex items-center justify-between px-5 fixed ${hasColorBar ? 'top-6' : 'top-5'} w-full z-30 md:px-6 lg:(px-8 ${hasColorBar ? 'top-6' : 'top-3'})`}>
+      {animateHeader && (
+        <Animate
+          id={["logo", "menuLink"]}
+          remove={["opacity-0", "translate-y-5", "skew-y-1"]}
+        />
+      )}
+      <header
+        class={`flex items-center justify-between px-5 fixed ${
+          hasColorBar ? "top-6" : "top-5"
+        } w-full z-30 md:px-6 lg:(px-8 ${hasColorBar ? "top-6" : "top-3"})`}
+      >
         <div id="logo" class={`${animateHeader && classes} delay-[1200ms]`}>
-          <a href="/" class={`flex gap-2 items-center hover:text-smooth duration-200`}>
+          <a
+            href="/"
+            class={`flex gap-2 items-center hover:text-smooth duration-200`}
+          >
             <img
               src={avatar}
               height="40"
@@ -41,8 +53,14 @@ export default function Header({
         </div>
         <div class="flex gap-3">
           {links?.map(({ label, href }) => (
-            <div id="menuLink" class={`${animateHeader && classes} delay-[1300ms]`}>
-              <a class={`flex flex-col items-center py-2 hover:text-smooth hover:duration-200`} href={href}>
+            <div
+              id="menuLink"
+              class={`${animateHeader && classes} delay-[1300ms]`}
+            >
+              <a
+                class={`flex flex-col items-center py-2 hover:text-smooth hover:duration-200`}
+                href={href}
+              >
                 {label}
                 <ActiveLink path={href} />
               </a>

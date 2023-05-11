@@ -10,7 +10,7 @@ export default {
         "2xl": "1536px",
       },
       fontSize: {
-        '3xl': '32px',
+        "3xl": "32px",
       },
       colors: {
         primary: "#2FD180",
@@ -33,8 +33,8 @@ export default {
   },
   variants: {
     extend: {
-     transitionDuration: ['hover', 'focus'],
-    }
+      transitionDuration: ["hover", "focus"],
+    },
   },
   preflight: (preflight: any) => ({
     ...preflight,
@@ -47,7 +47,8 @@ export default {
   }),
   plugins: {
     multicolor: {
-      background: "radial-gradient(100% 8151.79% at 0% 50%, #FC7074 0%, #EA95D6 39.06%, #54C3FF 66.15%, #4CB943 96.88%)"
-    }
+      background:
+        "radial-gradient(100% 8151.79% at 0% 50%, #FC7074 0%, #EA95D6 39.06%, #54C3FF 66.15%, #4CB943 96.88%)",
+    },
   },
-}
+};
