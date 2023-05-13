@@ -43,7 +43,7 @@ export default function Hero({
       />
       <div
         id="hero"
-        class="container mx-auto mt-[96px] 2xl:mt-[136px] flex gap-[124px] pl-5 pr-12 lg:(container px-0)"
+        class="container mx-auto mt-[96px] 2xl:mt-[156px] flex gap-[124px] pl-5 pr-12 lg:(container px-0)"
       >
         <div class="flex gap-5 items-stretch w-[640px] text-3xl leading-[1.25] md:leading-[1.25] md:text-5xl tracking-[-0.7%]">
           <div

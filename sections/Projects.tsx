@@ -34,7 +34,7 @@ export default function Projects({
   return (
     <div
       id="projects"
-      class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:mt-[144px] lg:max-w-full delay-[800ms]`}
+      class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:(mt-[144px] mb-[20px]) lg:max-w-full delay-[800ms]`}
     >
       <Animate
         id={["projects"]}
