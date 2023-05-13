@@ -59,6 +59,7 @@ export default function DarkContent({ title, description, steps }: Props) {
                     <Source
                       media="(min-width: 768px)"
                       src={step.image}
+                      class="max-w-[600px]"
                     />
                     <img
                       src={step.image}

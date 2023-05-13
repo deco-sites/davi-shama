@@ -7,7 +7,7 @@ export default {
         md: "768px",
         lg: "1024px",
         xl: "1220px",
-        "2xl": "1536px",
+        "2xl": "1220px",
       },
       fontSize: {
         "3xl": "32px",
