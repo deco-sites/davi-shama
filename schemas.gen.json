@@ -913,6 +913,13 @@
           "format": "textarea",
           "title": "Text"
         },
+        "removeGap": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Remove Gap"
+        },
         "extraContent": {
           "type": "object",
           "properties": {
@@ -951,13 +958,6 @@
             "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Brand"
           },
           "title": "Backed By"
-        },
-        "removeGap": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Remove Gap"
         },
         "hasBorder": {
           "type": [

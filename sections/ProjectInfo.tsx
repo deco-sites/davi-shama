@@ -9,6 +9,7 @@ export interface Props {
    * @format textarea
    */
   text?: Array<Paragraph>;
+  removeGap?: boolean;
   extraContent?: {
     image?: LiveImage;
     title?: string;
@@ -16,7 +17,6 @@ export interface Props {
   };
   metrics?: Array<Metric>;
   backedBy?: Array<Brand>;
-  removeGap?: boolean;
   hasBorder?: boolean;
 }
 
@@ -41,11 +41,11 @@ export default function ProjectInfo({
   title,
   titleLine2,
   text,
+  removeGap,
   extraContent,
   metrics,
   backedBy,
   hasBorder,
-  removeGap,
 }: Props) {
   const classes = "duration-[1000ms] opacity-0 translate-y-5 skew-y-1";
   const elementId = `element${Math.floor(Math.random() * Date.now())}`;
