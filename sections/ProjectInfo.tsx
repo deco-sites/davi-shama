@@ -102,7 +102,7 @@ export default function ProjectInfo({
             {extraContent.title && (
               <div class="font-medium text-black">{extraContent.title}</div>
             )}
-            {extraContent?.text.length > 0 && (
+            {extraContent?.text?.length > 0 && (
               <div class="flex-none text-xl gap-6 text-subdued flex flex-col leading-[1.7]">
                 {extraContent?.text.map((p) => {
                   return <p>{p.text}</p>;
