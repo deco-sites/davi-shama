@@ -18,8 +18,8 @@ class Animate extends Component<Props> {
   componentDidMount() {
     if (this.props.event === "imageLoad") {
       this.props.id?.forEach((e) => {
-        let container = document?.getElementById(e);
-        let img = container?.getElementsByTagName(this.props.type)[0];
+        const container = document?.getElementById(e);
+        const img = container?.getElementsByTagName(this.props.type)[0];
 
         if (this.props.type == "video") {
           img.addEventListener("canplay", () => {

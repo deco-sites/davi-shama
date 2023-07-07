@@ -39,7 +39,7 @@ class HeaderBg extends Component<Props> {
         document.getElementById("colorBarMulti3")?.classList.add("opacity-0");
     }
 
-    let {
+    const {
       type,
     } = this.props;
     setTimeout(() => {
