@@ -40,14 +40,6 @@ export default function Header({
             href="/"
             class={`flex gap-2 items-center hover:text-smooth duration-200`}
           >
-            <img
-              src={avatar}
-              height="40"
-              width="40"
-              alt="Davi Shamá"
-              decoding="async"
-              loading="lazy"
-            />
             Davi Shamá
           </a>
         </div>
@@ -58,10 +50,19 @@ export default function Header({
               class={`${animateHeader && classes} delay-[1300ms]`}
             >
               <a
-                class={`flex flex-col items-center py-2 hover:text-smooth hover:duration-200`}
+                class={`flex items-center py-2 hover:text-smooth hover:duration-200`}
                 href={href}
               >
                 {label}
+                <img
+                  src={avatar}
+                  height="24"
+                  width="24"
+                  alt="Davi Shamá"
+                  decoding="async"
+                  loading="lazy"
+                  class={`ml-3 -mt-1`}
+                />
                 <ActiveLink path={href} />
               </a>
             </div>

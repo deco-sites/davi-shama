@@ -36,15 +36,6 @@ export default {
       transitionDuration: ["hover", "focus"],
     },
   },
-  preflight: (preflight: any) => ({
-    ...preflight,
-
-    // Stick footer to the bottom of the page
-    body: {
-      "-webkit-font-smoothing": "antialiased",
-      "-moz-osx-font-smoothing": "grayscale",
-    },
-  }),
   plugins: {
     multicolor: {
       background:

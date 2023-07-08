@@ -43,17 +43,18 @@ export default function Hero({
       />
       <div
         id="hero"
-        class="container mx-auto mt-[96px] 2xl:mt-[156px] flex gap-[124px] pl-5 pr-12 lg:(container px-0)"
+        class="container mx-auto mt-[124px] 2xl:mt-[170px] flex gap-[140px] pl-5 pr-5 lg:(container px-0)"
       >
-        <div class="flex gap-5 items-stretch w-[640px] text-3xl leading-[1.25] md:leading-[1.25] md:text-5xl tracking-[-0.7%]">
-          <div
-            id="hiBar"
-            class={`${classes} hidden md:block flex-none w-[6px] bg-black rounded-full delay-[800ms]`}
-          >
-          </div>
-          <div class="flex-auto">
-            <h1 id="heroHi" class={`${classes} font-medium delay-100`}>{hi}</h1>
-            <h2 class="hidden md:block">
+        <div class="flex gap-5 items-stretch max-sm:w-full lg:w-[854px] text-3xl leading-[1.25] md:leading-[1.25] md:text-5xl tracking-[-0.7%]">
+          <div class="flex-auto md:ml-[50px] xl:ml-[220px]">
+            <h1
+              id="heroHi"
+              class={`${classes} font-medium delay-100`}
+              style="color: #83878D;"
+            >
+              {hi}
+            </h1>
+            <h2 class="font-medium hidden md:block">
               <div id="heroLine1" class={`${classes} delay-200`}>
                 {animatedIntro?.line1}
               </div>
@@ -79,12 +80,6 @@ export default function Hero({
               </div>
             </div>
           </div>
-        </div>
-        <div
-          id="heroDesc"
-          class={`${classes} hidden w-[352px] leading-[1.7] text-subdued lg:block delay-[800ms]`}
-        >
-          {description}
         </div>
       </div>
     </>
