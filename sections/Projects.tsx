@@ -34,7 +34,9 @@ export default function Projects({
   const elementId = `element${Math.floor(Math.random() * Date.now())}`;
 
   return (
-    <div id="projects" //class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:(mt-[144px] mb-[20px]) lg:max-w-full delay-[800ms]`}
+    <div
+      id="projects"
+      //class={`${classes} mt-20 container mx-auto md:mt-[124px] 2xl:(mt-[144px] mb-[20px]) lg:max-w-full delay-[800ms]`}
     >
       <div
         class={`container mx-auto md:w-[724px] lg:w-[825px] xl:w-[972px] md:mb-[80px]`}
