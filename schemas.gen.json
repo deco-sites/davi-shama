@@ -9,7 +9,55 @@
       "additionalProperties": false,
       "properties": {
         "__resolveType": {
-          "type": "string"
+          "type": "string",
+          "not": {
+            "enum": [
+              "deco-sites/davi-shama/functions/LoadGitHubRaw.ts",
+              "$live/loaders/workflows/events.ts",
+              "$live/loaders/workflows/get.ts",
+              "./islands/ActiveLink.tsx",
+              "./islands/CurrentPage.tsx",
+              "$live/handlers/devPage.ts",
+              "$live/handlers/fresh.ts",
+              "$live/handlers/proxy.ts",
+              "$live/handlers/redirect.ts",
+              "$live/handlers/router.ts",
+              "$live/handlers/routesSelection.ts",
+              "$live/handlers/workflowRunner.ts",
+              "$live/pages/LivePage.tsx",
+              "$live/sections/PageInclude.tsx",
+              "$live/sections/Slot.tsx",
+              "$live/sections/UseSlot.tsx",
+              "deco-sites/davi-shama/sections/AboutContent.tsx",
+              "deco-sites/davi-shama/sections/Banner.tsx",
+              "deco-sites/davi-shama/sections/ColorBar.tsx",
+              "deco-sites/davi-shama/sections/DarkContent.tsx",
+              "deco-sites/davi-shama/sections/Footer.tsx",
+              "deco-sites/davi-shama/sections/Head.tsx",
+              "deco-sites/davi-shama/sections/Header.tsx",
+              "deco-sites/davi-shama/sections/Hero.tsx",
+              "deco-sites/davi-shama/sections/ProjectHeader.tsx",
+              "deco-sites/davi-shama/sections/ProjectHighlight.tsx",
+              "deco-sites/davi-shama/sections/ProjectInfo.tsx",
+              "deco-sites/davi-shama/sections/ProjectNav.tsx",
+              "deco-sites/davi-shama/sections/Projects.tsx",
+              "deco-sites/davi-shama/sections/Spacer.tsx",
+              "$live/matchers/MatchAlways.ts",
+              "$live/matchers/MatchDate.ts",
+              "$live/matchers/MatchEnvironment.ts",
+              "$live/matchers/MatchHost.ts",
+              "$live/matchers/MatchMulti.ts",
+              "$live/matchers/MatchRandom.ts",
+              "$live/matchers/MatchSite.ts",
+              "$live/matchers/MatchUserAgent.ts",
+              "$live/flags/audience.ts",
+              "$live/flags/everyone.ts",
+              "$live/actions/workflows/cancel.ts",
+              "$live/actions/workflows/run.ts",
+              "$live/actions/workflows/signal.ts",
+              "$live/actions/workflows/start.ts"
+            ]
+          }
         }
       }
     },
@@ -39,6 +87,209 @@
       ],
       "title": "deco-sites/davi-shama/functions/LoadGitHubRaw.ts@Props"
     },
+    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@WorkflowExecution": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "Id"
+            },
+            "alias": {
+              "type": "string",
+              "title": "Alias"
+            },
+            "completedAt": {
+              "title": "Completed At"
+            },
+            "status": {
+              "title": "Status"
+            },
+            "metadata": {
+              "title": "Metadata"
+            },
+            "input": {
+              "title": "Input"
+            },
+            "output": {
+              "title": "Output"
+            }
+          },
+          "required": [
+            "id",
+            "alias",
+            "status"
+          ],
+          "title": "deco-cx/durable/backends/backend.ts@WorkflowExecution"
+        },
+        {
+          "title": "$live/loaders/workflows/events.ts",
+          "description": "Get the workflow execution events.",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2xvYWRlcnMvd29ya2Zsb3dzL2V2ZW50cy50cw==@Props"
+            }
+          ],
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "$live/loaders/workflows/events.ts"
+              ],
+              "default": "$live/loaders/workflows/events.ts"
+            }
+          }
+        }
+      ]
+    },
+    "ZGVjby1jeC9saXZlL2xvYWRlcnMvd29ya2Zsb3dzL2V2ZW50cy50cw==@Props": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "Id"
+        },
+        "page": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Page"
+        },
+        "pageSize": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Page Size"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "deco-cx/live/loaders/workflows/events.ts@Props"
+    },
+    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessstatusWorkflowExecution": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "title": "Status"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "indexedAccessstatusWorkflowExecution"
+    },
+    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessinputWorkflowExecution": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "title": "Input"
+        }
+      },
+      "required": [],
+      "title": "indexedAccessinputWorkflowExecution"
+    },
+    "ZGVjby1jeC9saXZlL2NvbW1vbnMvd29ya2Zsb3dzL3R5cGVzLnRz@WorkflowExecution": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "completedAt": {
+              "title": "Completed At"
+            },
+            "id": {
+              "type": "string",
+              "title": "Id"
+            },
+            "status": {
+              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessstatusWorkflowExecution",
+              "title": "Status"
+            },
+            "workflow": {
+              "type": "string",
+              "title": "Workflow"
+            },
+            "input": {
+              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessinputWorkflowExecution",
+              "title": "Input"
+            },
+            "output": {
+              "title": "Output"
+            },
+            "props": {
+              "title": "Props"
+            }
+          },
+          "required": [
+            "id",
+            "status",
+            "workflow"
+          ],
+          "title": "deco-cx/live/commons/workflows/types.ts@WorkflowExecution"
+        },
+        {
+          "title": "$live/loaders/workflows/get.ts",
+          "description": "Read the workflow execution information.",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2xvYWRlcnMvd29ya2Zsb3dzL2dldC50cw==@Props"
+            }
+          ],
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "$live/loaders/workflows/get.ts"
+              ],
+              "default": "$live/loaders/workflows/get.ts"
+            }
+          }
+        }
+      ]
+    },
+    "ZGVjby1jeC9saXZlL2xvYWRlcnMvd29ya2Zsb3dzL2dldC50cw==@Props": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "Id"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "deco-cx/live/loaders/workflows/get.ts@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQWN0aXZlTGluay50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "title": "Path"
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "title": "deco-sites/davi-shama/islands/ActiveLink.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4@Props": {
       "type": "object",
       "properties": {
@@ -54,74 +305,6 @@
         "pages"
       ],
       "title": "deco-sites/davi-shama/islands/CurrentPage.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQWN0aXZlTGluay50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "path": {
-          "type": "string",
-          "title": "Path"
-        }
-      },
-      "required": [
-        "path"
-      ],
-      "title": "deco-sites/davi-shama/islands/ActiveLink.tsx@Props"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
-      "$ref": "#/root/flags",
-      "title": "Flag"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag"
-      },
-      "title": "Flag[]"
-    },
-    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
-      "type": "object",
-      "properties": {
-        "flags": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]",
-          "title": "Flags"
-        }
-      },
-      "required": [
-        "flags"
-      ],
-      "title": "deco-cx/live/handlers/routesSelection.ts@SelectionConfig"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
-      "$ref": "#/root/handlers",
-      "title": "Handler"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record": {
-      "title": "Unknown record",
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
-      }
-    },
-    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlci50cw==@RouterConfig": {
-      "type": "object",
-      "properties": {
-        "base": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Base"
-        },
-        "routes": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record",
-          "title": "Routes"
-        }
-      },
-      "required": [
-        "routes"
-      ],
-      "title": "deco-cx/live/handlers/router.ts@RouterConfig"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
       "$ref": "#/root/pages",
@@ -153,6 +336,139 @@
       ],
       "title": "deco-cx/live/handlers/fresh.ts@FreshConfig"
     },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3Byb3h5LnRz@Props": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "the proxy url.",
+          "title": "Url"
+        },
+        "basePath": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "the base path of the url.",
+          "title": "Base Path"
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "title": "deco-cx/live/handlers/proxy.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JlZGlyZWN0LnRz@RedirectConfig": {
+      "type": "object",
+      "properties": {
+        "to": {
+          "type": "string",
+          "title": "To"
+        }
+      },
+      "required": [
+        "to"
+      ],
+      "title": "deco-cx/live/handlers/redirect.ts@RedirectConfig"
+    },
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
+      "$ref": "#/root/handlers",
+      "title": "Handler"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route": {
+      "type": "object",
+      "properties": {
+        "pathTemplate": {
+          "type": "string",
+          "title": "Path Template"
+        },
+        "handler": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
+              "title": "Value"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "title": "Handler"
+        }
+      },
+      "required": [
+        "pathTemplate",
+        "handler"
+      ],
+      "title": "Route"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route"
+      },
+      "title": "Route[]"
+    },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlci50cw==@RouterConfig": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Base"
+        },
+        "routes": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
+          "title": "Routes"
+        }
+      },
+      "required": [
+        "routes"
+      ],
+      "title": "deco-cx/live/handlers/router.ts@RouterConfig"
+    },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
+      "type": "object",
+      "properties": {
+        "audiences": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/JGxpdmUvZmxhZ3MvYXVkaWVuY2UudHM="
+              },
+              {
+                "$ref": "#/definitions/JGxpdmUvZmxhZ3MvZXZlcnlvbmUudHM="
+              }
+            ]
+          },
+          "title": "Audiences"
+        }
+      },
+      "required": [
+        "audiences"
+      ],
+      "title": "deco-cx/live/handlers/routesSelection.ts@SelectionConfig"
+    },
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow": {
+      "$ref": "#/root/workflows",
+      "title": "Workflow"
+    },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3dvcmtmbG93UnVubmVyLnRz@Config": {
+      "type": "object",
+      "properties": {
+        "workflow": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
+          "title": "Workflow"
+        }
+      },
+      "required": [
+        "workflow"
+      ],
+      "title": "deco-cx/live/handlers/workflowRunner.ts@Config"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section": {
       "$ref": "#/root/sections",
       "title": "Section"
@@ -171,6 +487,10 @@
           "type": "string",
           "title": "Name"
         },
+        "layout": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
+          "title": "Layout"
+        },
         "sections": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
           "title": "Sections"
@@ -182,238 +502,130 @@
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project": {
+    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "label": {
-          "type": "string",
-          "description": "Project title",
-          "title": "Label"
-        },
-        "company": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Company"
-        },
-        "companyColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Company Color"
-        },
-        "year": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Year"
-        },
-        "comingSoon": {
+        "page": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
+          "title": "Page"
+        }
+      },
+      "required": [
+        "page"
+      ],
+      "title": "deco-cx/live/sections/PageInclude.tsx@Props"
+    },
+    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1Nsb3QudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "required": {
           "type": [
             "boolean",
             "null"
           ],
-          "title": "Coming Soon"
+          "description": "Enforces the slot to be fulfilled.",
+          "title": "Required"
         },
-        "href": {
-          "type": [
-            "string",
-            "null"
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "const": "content"
+                },
+                {
+                  "type": "string",
+                  "const": "footer"
+                },
+                {
+                  "type": "string",
+                  "const": "header"
+                },
+                {
+                  "type": "string",
+                  "const": "analytics"
+                },
+                {
+                  "type": "string",
+                  "const": "design-system"
+                },
+                {
+                  "type": "string",
+                  "const": "SEO"
+                }
+              ],
+              "type": "string"
+            }
           ],
-          "description": "Page link",
-          "title": "Href"
-        },
-        "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "description": "Preview image",
-          "title": "Image"
+          "type": "string",
+          "description": "The name of the slot.",
+          "default": "content",
+          "title": "Name"
         }
       },
-      "required": [
-        "label"
-      ],
-      "title": "Project"
+      "required": [],
+      "title": "deco-cx/live/sections/Slot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project"
-      },
-      "title": "Project[]"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Props": {
+    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1VzZVNsb3QudHN4@Props": {
       "type": "object",
       "properties": {
-        "sectionTitle": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "const": "content"
+                },
+                {
+                  "type": "string",
+                  "const": "footer"
+                },
+                {
+                  "type": "string",
+                  "const": "header"
+                },
+                {
+                  "type": "string",
+                  "const": "analytics"
+                },
+                {
+                  "type": "string",
+                  "const": "design-system"
+                },
+                {
+                  "type": "string",
+                  "const": "SEO"
+                }
+              ],
+              "type": "string"
+            }
+          ],
           "type": "string",
-          "title": "Section Title"
+          "title": "Name"
         },
-        "projects": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project[]",
-          "title": "Projects"
+        "sections": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
+          "title": "Sections"
         }
       },
       "required": [
-        "sectionTitle",
-        "projects"
+        "name",
+        "sections"
       ],
-      "title": "deco-sites/davi-shama/sections/Projects.tsx@Props"
+      "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "animatedTitle": {
-          "type": "object",
-          "properties": {
-            "line1": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Line1"
-            },
-            "line2": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Line2"
-            },
-            "line3": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Line3"
-            }
-          },
-          "required": [],
-          "title": "Animated Title"
-        },
-        "titleWidth": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title Width"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description"
-        },
-        "year": {
-          "type": "string",
-          "title": "Year"
-        },
-        "company": {
-          "type": "string",
-          "title": "Company"
-        },
-        "bgColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Bg Color"
-        },
-        "companyColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Company Color"
-        }
-      },
-      "required": [
-        "title",
-        "year",
-        "company"
-      ],
-      "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4@Props": {
-      "type": "object",
-      "properties": {
-        "hi": {
-          "type": "string",
-          "title": "Hi"
-        },
-        "animatedIntro": {
-          "type": "object",
-          "properties": {
-            "line1": {
-              "type": "string",
-              "title": "Line1"
-            },
-            "line2": {
-              "type": "string",
-              "title": "Line2"
-            },
-            "line3": {
-              "type": "string",
-              "title": "Line3"
-            }
-          },
-          "required": [
-            "line1",
-            "line2",
-            "line3"
-          ],
-          "title": "Animated Intro"
-        },
-        "animatedIntroMobile": {
-          "type": "object",
-          "properties": {
-            "line1": {
-              "type": "string",
-              "title": "Line1"
-            },
-            "line2": {
-              "type": "string",
-              "title": "Line2"
-            },
-            "line3": {
-              "type": "string",
-              "title": "Line3"
-            },
-            "line4": {
-              "type": "string",
-              "title": "Line4"
-            }
-          },
-          "required": [
-            "line1",
-            "line2",
-            "line3",
-            "line4"
-          ],
-          "title": "Animated Intro Mobile"
-        },
-        "description": {
-          "type": "string",
-          "title": "Description"
-        }
-      },
-      "required": [
-        "hi",
-        "description"
-      ],
-      "title": "deco-sites/davi-shama/sections/Hero.tsx@Props"
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Fib3V0Q29udGVudC50c3g=@Paragraph": {
       "type": "object",
@@ -742,42 +954,19 @@
       ],
       "title": "deco-sites/davi-shama/sections/Banner.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=@Props": {
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "height": {
-          "type": "string",
-          "title": "Height"
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Colors"
         }
       },
-      "required": [
-        "height"
-      ],
-      "title": "deco-sites/davi-shama/sections/Spacer.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "text": {
-          "type": "string",
-          "format": "textarea",
-          "title": "Text"
-        },
-        "dividerColor": {
-          "type": "string",
-          "title": "Divider Color"
-        }
-      },
-      "required": [
-        "title",
-        "text",
-        "dividerColor"
-      ],
-      "title": "deco-sites/davi-shama/sections/ProjectHighlight.tsx@Props"
+      "required": [],
+      "title": "deco-sites/davi-shama/sections/ColorBar.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Step": {
       "type": "object",
@@ -834,19 +1023,293 @@
       ],
       "title": "deco-sites/davi-shama/sections/DarkContent.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Zvb3Rlci50c3g=@Props": {
       "type": "object",
       "properties": {
-        "colors": {
+        "textLeft": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Text Left"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/davi-shama/sections/Footer.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "imageUrl": {
+          "type": "string",
+          "title": "Image Url"
+        },
+        "faviconUrl": {
+          "type": "string",
+          "title": "Favicon Url"
+        },
+        "styleUrls": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "title": "Colors"
+          "title": "Style Urls"
+        },
+        "themeColor": {
+          "type": "string",
+          "title": "Theme Color"
         }
       },
-      "required": [],
-      "title": "deco-sites/davi-shama/sections/ColorBar.tsx@Props"
+      "required": [
+        "title",
+        "description",
+        "url",
+        "imageUrl",
+        "faviconUrl",
+        "styleUrls",
+        "themeColor"
+      ],
+      "title": "deco-sites/davi-shama/sections/Head.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "Link"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link"
+      },
+      "title": "Link[]"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "avatar": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Avatar"
+        },
+        "links": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link[]",
+          "title": "Links"
+        },
+        "hasColorBar": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Has Color Bar"
+        },
+        "animateHeader": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Animate Header"
+        }
+      },
+      "required": [
+        "avatar"
+      ],
+      "title": "deco-sites/davi-shama/sections/Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "hi": {
+          "type": "string",
+          "title": "Hi"
+        },
+        "animatedIntro": {
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": "string",
+              "title": "Line1"
+            },
+            "line2": {
+              "type": "string",
+              "title": "Line2"
+            },
+            "line3": {
+              "type": "string",
+              "title": "Line3"
+            }
+          },
+          "required": [
+            "line1",
+            "line2",
+            "line3"
+          ],
+          "title": "Animated Intro"
+        },
+        "animatedIntroMobile": {
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": "string",
+              "title": "Line1"
+            },
+            "line2": {
+              "type": "string",
+              "title": "Line2"
+            },
+            "line3": {
+              "type": "string",
+              "title": "Line3"
+            },
+            "line4": {
+              "type": "string",
+              "title": "Line4"
+            }
+          },
+          "required": [
+            "line1",
+            "line2",
+            "line3",
+            "line4"
+          ],
+          "title": "Animated Intro Mobile"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "hi",
+        "description"
+      ],
+      "title": "deco-sites/davi-shama/sections/Hero.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "animatedTitle": {
+          "type": "object",
+          "properties": {
+            "line1": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Line1"
+            },
+            "line2": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Line2"
+            },
+            "line3": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Line3"
+            }
+          },
+          "required": [],
+          "title": "Animated Title"
+        },
+        "titleWidth": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Width"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "year": {
+          "type": "string",
+          "title": "Year"
+        },
+        "company": {
+          "type": "string",
+          "title": "Company"
+        },
+        "bgColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bg Color"
+        },
+        "companyColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Company Color"
+        }
+      },
+      "required": [
+        "title",
+        "year",
+        "company"
+      ],
+      "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Text"
+        },
+        "dividerColor": {
+          "type": "string",
+          "title": "Divider Color"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "dividerColor"
+      ],
+      "title": "deco-sites/davi-shama/sections/ProjectHighlight.tsx@Props"
     },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Paragraph": {
       "type": "object",
@@ -979,122 +1442,6 @@
       ],
       "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Zvb3Rlci50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "textLeft": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Text Left"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/davi-shama/sections/Footer.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWQudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "description": {
-          "type": "string",
-          "title": "Description"
-        },
-        "url": {
-          "type": "string",
-          "title": "Url"
-        },
-        "imageUrl": {
-          "type": "string",
-          "title": "Image Url"
-        },
-        "faviconUrl": {
-          "type": "string",
-          "title": "Favicon Url"
-        },
-        "styleUrls": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Style Urls"
-        },
-        "themeColor": {
-          "type": "string",
-          "title": "Theme Color"
-        }
-      },
-      "required": [
-        "title",
-        "description",
-        "url",
-        "imageUrl",
-        "faviconUrl",
-        "styleUrls",
-        "themeColor"
-      ],
-      "title": "deco-sites/davi-shama/sections/Head.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "type": "string",
-          "title": "Label"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        }
-      },
-      "required": [
-        "label",
-        "href"
-      ],
-      "title": "Link"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link"
-      },
-      "title": "Link[]"
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "avatar": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Avatar"
-        },
-        "links": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g=@Link[]",
-          "title": "Links"
-        },
-        "hasColorBar": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Has Color Bar"
-        },
-        "animateHeader": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Animate Header"
-        }
-      },
-      "required": [
-        "avatar"
-      ],
-      "title": "deco-sites/davi-shama/sections/Header.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4@Props": {
       "type": "object",
       "properties": {
@@ -1111,18 +1458,98 @@
       ],
       "title": "deco-sites/davi-shama/sections/ProjectNav.tsx@Props"
     },
-    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project": {
       "type": "object",
       "properties": {
-        "page": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
-          "title": "Page"
+        "label": {
+          "type": "string",
+          "description": "Project title",
+          "title": "Label"
+        },
+        "company": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Company"
+        },
+        "companyColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Company Color"
+        },
+        "year": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Year"
+        },
+        "comingSoon": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Coming Soon"
+        },
+        "href": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Page link",
+          "title": "Href"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Preview image",
+          "title": "Image"
         }
       },
       "required": [
-        "page"
+        "label"
       ],
-      "title": "deco-cx/live/sections/PageInclude.tsx@Props"
+      "title": "Project"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project"
+      },
+      "title": "Project[]"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "title": "Section Title"
+        },
+        "projects": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Project[]",
+          "title": "Projects"
+        }
+      },
+      "required": [
+        "sectionTitle",
+        "projects"
+      ],
+      "title": "deco-sites/davi-shama/sections/Projects.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "height": {
+          "type": "string",
+          "title": "Height"
+        }
+      },
+      "required": [
+        "height"
+      ],
+      "title": "deco-sites/davi-shama/sections/Spacer.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -1147,7 +1574,30 @@
       "required": [],
       "title": "deco-cx/live/matchers/MatchDate.ts@Props"
     },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props": {
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props": {
+      "type": "object",
+      "properties": {
+        "environment": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "production"
+            },
+            {
+              "type": "string",
+              "const": "development"
+            }
+          ],
+          "type": "string",
+          "title": "Environment"
+        }
+      },
+      "required": [
+        "environment"
+      ],
+      "title": "deco-cx/live/matchers/MatchEnvironment.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoSG9zdC50cw==@Props": {
       "type": "object",
       "properties": {
         "includes": {
@@ -1166,20 +1616,7 @@
         }
       },
       "required": [],
-      "title": "deco-cx/live/matchers/MatchUserAgent.ts@Props"
-    },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props": {
-      "type": "object",
-      "properties": {
-        "siteId": {
-          "type": "number",
-          "title": "Site Id"
-        }
-      },
-      "required": [
-        "siteId"
-      ],
-      "title": "deco-cx/live/matchers/MatchSite.ts@Props"
+      "title": "deco-cx/live/matchers/MatchHost.ts@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher": {
       "$ref": "#/root/matchers",
@@ -1233,28 +1670,64 @@
       ],
       "title": "deco-cx/live/matchers/MatchRandom.ts@Props"
     },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props": {
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props": {
       "type": "object",
       "properties": {
-        "environment": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "production"
-            },
-            {
-              "type": "string",
-              "const": "development"
-            }
-          ],
-          "type": "string",
-          "title": "Environment"
+        "siteId": {
+          "type": "number",
+          "title": "Site Id"
         }
       },
       "required": [
-        "environment"
+        "siteId"
       ],
-      "title": "deco-cx/live/matchers/MatchEnvironment.ts@Props"
+      "title": "deco-cx/live/matchers/MatchSite.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props": {
+      "type": "object",
+      "properties": {
+        "includes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Includes"
+        },
+        "match": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Match"
+        }
+      },
+      "required": [],
+      "title": "deco-cx/live/matchers/MatchUserAgent.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override": {
+      "type": "object",
+      "properties": {
+        "use": {
+          "type": "string",
+          "title": "Use"
+        },
+        "insteadOf": {
+          "type": "string",
+          "title": "Instead Of"
+        }
+      },
+      "required": [
+        "use",
+        "insteadOf"
+      ],
+      "title": "Override"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override"
+      },
+      "title": "Override[]"
     },
     "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Audience": {
       "type": "object",
@@ -1265,24 +1738,24 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
         },
         "overrides": {
-          "title": "Overrides",
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]",
+          "title": "Overrides"
         }
       },
       "required": [
         "matcher",
-        "name",
-        "routes"
+        "name"
       ],
       "title": "deco-cx/live/flags/audience.ts@Audience"
     },
@@ -1290,22 +1763,151 @@
       "type": "object",
       "properties": {
         "routes": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
         },
         "overrides": {
-          "title": "Overrides",
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]",
+          "title": "Overrides"
         }
       },
       "required": [],
       "title": "deco-cx/live/flags/everyone.ts@EveryoneConfig"
     },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL2NhbmNlbC50cw==@Props": {
+      "type": "object",
+      "properties": {
+        "executionId": {
+          "type": "string",
+          "title": "Execution Id"
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Reason"
+        }
+      },
+      "required": [
+        "executionId"
+      ],
+      "title": "deco-cx/live/actions/workflows/cancel.ts@Props"
+    },
+    "ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "title": "Results"
+        },
+        "executionId": {
+          "type": "string",
+          "title": "Execution Id"
+        },
+        "metadata": {
+          "title": "Metadata"
+        }
+      },
+      "required": [
+        "results",
+        "executionId",
+        "metadata"
+      ],
+      "title": "deco-cx/durable/handler.ts@RunRequest"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3NpZ25hbC50cw==@Props": {
+      "type": "object",
+      "properties": {
+        "signal": {
+          "type": "string",
+          "title": "Signal"
+        },
+        "executionId": {
+          "type": "string",
+          "title": "Execution Id"
+        },
+        "payload": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Payload"
+        }
+      },
+      "required": [
+        "signal",
+        "executionId"
+      ],
+      "title": "deco-cx/live/actions/workflows/signal.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "title": "Key"
+        },
+        "props": {
+          "type": "object",
+          "title": "Props"
+        }
+      },
+      "required": [
+        "key",
+        "props"
+      ],
+      "title": "WorkflowRef"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|d066672075211fe27d122fbfbeae0150": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ref": {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
+              "title": "Ref"
+            }
+          },
+          "required": [
+            "ref"
+          ]
+        }
+      ],
+      "title": "WorkflowRef|d066672075211fe27d122fbfbeae0150"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
+      "type": "object",
+      "properties": {
+        "workflow": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|d066672075211fe27d122fbfbeae0150",
+          "title": "Workflow"
+        },
+        "id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Id"
+        },
+        "args": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "title": "Args"
+        }
+      },
+      "required": [
+        "workflow"
+      ],
+      "title": "deco-cx/live/actions/workflows/start.ts@Props"
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz": {
-      "title": "deco-sites/davi-shama/functions/LoadGitHubRaw.ts",
+      "title": "GitHub Raw Loader",
+      "description": "Grabs data from a GitHub repo",
       "type": "object",
       "allOf": [
         {
@@ -1325,12 +1927,13 @@
         }
       }
     },
-    "Li9pc2xhbmRzL0N1cnJlbnRQYWdlLnRzeA==": {
-      "title": "./islands/CurrentPage.tsx",
+    "JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZXZlbnRzLnRz": {
+      "title": "$live/loaders/workflows/events.ts",
+      "description": "Get the workflow execution events.",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2xvYWRlcnMvd29ya2Zsb3dzL2V2ZW50cy50cw==@Props"
         }
       ],
       "required": [
@@ -1340,9 +1943,31 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/CurrentPage.tsx"
+            "$live/loaders/workflows/events.ts"
           ],
-          "default": "./islands/CurrentPage.tsx"
+          "default": "$live/loaders/workflows/events.ts"
+        }
+      }
+    },
+    "JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZ2V0LnRz": {
+      "title": "$live/loaders/workflows/get.ts",
+      "description": "Read the workflow execution information.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2xvYWRlcnMvd29ya2Zsb3dzL2dldC50cw==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/loaders/workflows/get.ts"
+          ],
+          "default": "$live/loaders/workflows/get.ts"
         }
       }
     },
@@ -1367,12 +1992,12 @@
         }
       }
     },
-    "JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz": {
-      "title": "$live/handlers/routesSelection.ts",
+    "Li9pc2xhbmRzL0N1cnJlbnRQYWdlLnRzeA==": {
+      "title": "./islands/CurrentPage.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL2lzbGFuZHMvQ3VycmVudFBhZ2UudHN4@Props"
         }
       ],
       "required": [
@@ -1382,9 +2007,96 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/handlers/routesSelection.ts"
+            "./islands/CurrentPage.tsx"
           ],
-          "default": "$live/handlers/routesSelection.ts"
+          "default": "./islands/CurrentPage.tsx"
+        }
+      }
+    },
+    "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
+      "title": "Private Fresh Page",
+      "description": "Useful for pages under development.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/handlers/devPage.ts"
+          ],
+          "default": "$live/handlers/devPage.ts"
+        }
+      }
+    },
+    "JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM=": {
+      "title": "Fresh Page",
+      "description": "Renders a fresh page.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL2ZyZXNoLnRz@FreshConfig"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/handlers/fresh.ts"
+          ],
+          "default": "$live/handlers/fresh.ts"
+        }
+      }
+    },
+    "JGxpdmUvaGFuZGxlcnMvcHJveHkudHM=": {
+      "title": "Proxy Handler",
+      "description": "Proxies request to the target url.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3Byb3h5LnRz@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/handlers/proxy.ts"
+          ],
+          "default": "$live/handlers/proxy.ts"
+        }
+      }
+    },
+    "JGxpdmUvaGFuZGxlcnMvcmVkaXJlY3QudHM=": {
+      "title": "$live/handlers/redirect.ts",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JlZGlyZWN0LnRz@RedirectConfig"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/handlers/redirect.ts"
+          ],
+          "default": "$live/handlers/redirect.ts"
         }
       }
     },
@@ -1409,12 +2121,13 @@
         }
       }
     },
-    "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
-      "title": "$live/handlers/devPage.ts",
+    "JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz": {
+      "title": "Routes Selection",
+      "description": "Select routes based on the target audience.",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig"
         }
       ],
       "required": [
@@ -1424,18 +2137,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/handlers/devPage.ts"
+            "$live/handlers/routesSelection.ts"
           ],
-          "default": "$live/handlers/devPage.ts"
+          "default": "$live/handlers/routesSelection.ts"
         }
       }
     },
-    "JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM=": {
-      "title": "$live/handlers/fresh.ts",
+    "JGxpdmUvaGFuZGxlcnMvd29ya2Zsb3dSdW5uZXIudHM=": {
+      "title": "$live/handlers/workflowRunner.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL2ZyZXNoLnRz@FreshConfig"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3dvcmtmbG93UnVubmVyLnRz@Config"
         }
       ],
       "required": [
@@ -1445,9 +2158,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/handlers/fresh.ts"
+            "$live/handlers/workflowRunner.ts"
           ],
-          "default": "$live/handlers/fresh.ts"
+          "default": "$live/handlers/workflowRunner.ts"
         }
       }
     },
@@ -1472,12 +2185,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==": {
-      "title": "deco-sites/davi-shama/sections/Projects.tsx",
+    "JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4": {
+      "title": "$live/sections/PageInclude.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props"
         }
       ],
       "required": [
@@ -1487,18 +2200,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/davi-shama/sections/Projects.tsx"
+            "$live/sections/PageInclude.tsx"
           ],
-          "default": "deco-sites/davi-shama/sections/Projects.tsx"
+          "default": "$live/sections/PageInclude.tsx"
         }
       }
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4": {
-      "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx",
+    "JGxpdmUvc2VjdGlvbnMvU2xvdC50c3g=": {
+      "title": "$live/sections/Slot.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1Nsb3QudHN4@Props"
         }
       ],
       "required": [
@@ -1508,18 +2221,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/davi-shama/sections/ProjectHeader.tsx"
+            "$live/sections/Slot.tsx"
           ],
-          "default": "deco-sites/davi-shama/sections/ProjectHeader.tsx"
+          "default": "$live/sections/Slot.tsx"
         }
       }
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4": {
-      "title": "deco-sites/davi-shama/sections/Hero.tsx",
+    "JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g=": {
+      "title": "$live/sections/UseSlot.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1VzZVNsb3QudHN4@Props"
         }
       ],
       "required": [
@@ -1529,9 +2242,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/davi-shama/sections/Hero.tsx"
+            "$live/sections/UseSlot.tsx"
           ],
-          "default": "deco-sites/davi-shama/sections/Hero.tsx"
+          "default": "$live/sections/UseSlot.tsx"
         }
       }
     },
@@ -1577,69 +2290,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=": {
-      "title": "deco-sites/davi-shama/sections/Spacer.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/davi-shama/sections/Spacer.tsx"
-          ],
-          "default": "deco-sites/davi-shama/sections/Spacer.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4": {
-      "title": "deco-sites/davi-shama/sections/ProjectHighlight.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/davi-shama/sections/ProjectHighlight.tsx"
-          ],
-          "default": "deco-sites/davi-shama/sections/ProjectHighlight.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==": {
-      "title": "deco-sites/davi-shama/sections/DarkContent.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/davi-shama/sections/DarkContent.tsx"
-          ],
-          "default": "deco-sites/davi-shama/sections/DarkContent.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA==": {
       "title": "deco-sites/davi-shama/sections/ColorBar.tsx",
       "type": "object",
@@ -1661,12 +2311,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==": {
-      "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx",
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/DarkContent.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA==@Props"
         }
       ],
       "required": [
@@ -1676,9 +2326,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/davi-shama/sections/ProjectInfo.tsx"
+            "deco-sites/davi-shama/sections/DarkContent.tsx"
           ],
-          "default": "deco-sites/davi-shama/sections/ProjectInfo.tsx"
+          "default": "deco-sites/davi-shama/sections/DarkContent.tsx"
         }
       }
     },
@@ -1745,6 +2395,90 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4": {
+      "title": "deco-sites/davi-shama/sections/Hero.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/Hero.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/Hero.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4": {
+      "title": "deco-sites/davi-shama/sections/ProjectHeader.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectHeader.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectHeader.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4": {
+      "title": "deco-sites/davi-shama/sections/ProjectHighlight.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectHighlight.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectHighlight.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/ProjectInfo.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/ProjectInfo.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/ProjectInfo.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4": {
       "title": "deco-sites/davi-shama/sections/ProjectNav.tsx",
       "type": "object",
@@ -1766,12 +2500,12 @@
         }
       }
     },
-    "JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4": {
-      "title": "$live/sections/PageInclude.tsx",
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==": {
+      "title": "deco-sites/davi-shama/sections/Projects.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA==@Props"
         }
       ],
       "required": [
@@ -1781,9 +2515,46 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/sections/PageInclude.tsx"
+            "deco-sites/davi-shama/sections/Projects.tsx"
           ],
-          "default": "$live/sections/PageInclude.tsx"
+          "default": "deco-sites/davi-shama/sections/Projects.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=": {
+      "title": "deco-sites/davi-shama/sections/Spacer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/davi-shama/sections/Spacer.tsx"
+          ],
+          "default": "deco-sites/davi-shama/sections/Spacer.tsx"
+        }
+      }
+    },
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
+      "title": "$live/matchers/MatchAlways.ts",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/matchers/MatchAlways.ts"
+          ],
+          "default": "$live/matchers/MatchAlways.ts"
         }
       }
     },
@@ -1808,12 +2579,12 @@
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM=": {
-      "title": "$live/matchers/MatchUserAgent.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw==": {
+      "title": "$live/matchers/MatchEnvironment.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props"
         }
       ],
       "required": [
@@ -1823,18 +2594,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchUserAgent.ts"
+            "$live/matchers/MatchEnvironment.ts"
           ],
-          "default": "$live/matchers/MatchUserAgent.ts"
+          "default": "$live/matchers/MatchEnvironment.ts"
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz": {
-      "title": "$live/matchers/MatchSite.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hIb3N0LnRz": {
+      "title": "$live/matchers/MatchHost.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoSG9zdC50cw==@Props"
         }
       ],
       "required": [
@@ -1844,9 +2615,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchSite.ts"
+            "$live/matchers/MatchHost.ts"
           ],
-          "default": "$live/matchers/MatchSite.ts"
+          "default": "$live/matchers/MatchHost.ts"
         }
       }
     },
@@ -1892,12 +2663,12 @@
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw==": {
-      "title": "$live/matchers/MatchEnvironment.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz": {
+      "title": "$live/matchers/MatchSite.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props"
         }
       ],
       "required": [
@@ -1907,15 +2678,20 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchEnvironment.ts"
+            "$live/matchers/MatchSite.ts"
           ],
-          "default": "$live/matchers/MatchEnvironment.ts"
+          "default": "$live/matchers/MatchSite.ts"
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
-      "title": "$live/matchers/MatchAlways.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM=": {
+      "title": "$live/matchers/MatchUserAgent.ts",
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props"
+        }
+      ],
       "required": [
         "__resolveType"
       ],
@@ -1923,14 +2699,15 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchAlways.ts"
+            "$live/matchers/MatchUserAgent.ts"
           ],
-          "default": "$live/matchers/MatchAlways.ts"
+          "default": "$live/matchers/MatchUserAgent.ts"
         }
       }
     },
     "JGxpdmUvZmxhZ3MvYXVkaWVuY2UudHM=": {
-      "title": "$live/flags/audience.ts",
+      "title": "Audience",
+      "description": "Select routes based on the matched audience.",
       "type": "object",
       "allOf": [
         {
@@ -1951,7 +2728,8 @@
       }
     },
     "JGxpdmUvZmxhZ3MvZXZlcnlvbmUudHM=": {
-      "title": "$live/flags/everyone.ts",
+      "title": "Audience Everyone",
+      "description": "Always match regardless of the current user",
       "type": "object",
       "allOf": [
         {
@@ -1971,6 +2749,94 @@
         }
       }
     },
+    "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvY2FuY2VsLnRz": {
+      "title": "$live/actions/workflows/cancel.ts",
+      "description": "Cancels the workflow execution, you can, optionally, add a reason of the cancellation.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL2NhbmNlbC50cw==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/actions/workflows/cancel.ts"
+          ],
+          "default": "$live/actions/workflows/cancel.ts"
+        }
+      }
+    },
+    "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvcnVuLnRz": {
+      "title": "$live/actions/workflows/run.ts",
+      "description": "Proceed the workflow execution based on the current state of the workflow.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/actions/workflows/run.ts"
+          ],
+          "default": "$live/actions/workflows/run.ts"
+        }
+      }
+    },
+    "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc2lnbmFsLnRz": {
+      "title": "$live/actions/workflows/signal.ts",
+      "description": "Sends a signal to the workflow using the specified payload.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3NpZ25hbC50cw==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/actions/workflows/signal.ts"
+          ],
+          "default": "$live/actions/workflows/signal.ts"
+        }
+      }
+    },
+    "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc3RhcnQudHM=": {
+      "title": "$live/actions/workflows/start.ts",
+      "description": "Start the workflow execution with the given props and args. You can set the id of the workflow as you wish.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/actions/workflows/start.ts"
+          ],
+          "default": "$live/actions/workflows/start.ts"
+        }
+      }
+    },
     "ZGVjby1jeC9saXZlL3JvdXRlcy9fbWlkZGxld2FyZS50cw==@MiddlewareConfig": {
       "type": "object",
       "properties": {
@@ -1979,26 +2845,15 @@
           "type": "object",
           "additionalProperties": {
             "$ref": "#/definitions/Resolvable"
-          }
+          },
+          "description": "Configure your loaders global state."
         }
       },
       "required": [
         "state"
       ],
-      "title": "deco-cx/live/routes/_middleware.ts@MiddlewareConfig"
-    },
-    "ZGVjby1jeC9saXZlL3JvdXRlcy9bLi4uY2F0Y2hhbGxdLnRzeA==@Entrypoint": {
-      "type": "object",
-      "properties": {
-        "handler": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
-          "title": "Handler"
-        }
-      },
-      "required": [
-        "handler"
-      ],
-      "title": "deco-cx/live/routes/[...catchall].tsx@Entrypoint"
+      "title": "deco-cx/live/routes/_middleware.ts@MiddlewareConfig",
+      "description": "Global configurations for ./routes/_middleware.ts route"
     }
   },
   "root": {
@@ -2013,6 +2868,28 @@
         }
       ]
     },
+    "accounts": {
+      "title": "accounts",
+      "anyOf": []
+    },
+    "loaders": {
+      "title": "loaders",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZXZlbnRzLnRz"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZ2V0LnRz"
+        }
+      ]
+    },
+    "routes": {
+      "title": "routes",
+      "anyOf": []
+    },
     "islands": {
       "title": "islands",
       "anyOf": [
@@ -2020,10 +2897,10 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL0N1cnJlbnRQYWdlLnRzeA=="
+          "$ref": "#/definitions/Li9pc2xhbmRzL0FjdGl2ZUxpbmsudHN4"
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL0FjdGl2ZUxpbmsudHN4"
+          "$ref": "#/definitions/Li9pc2xhbmRzL0N1cnJlbnRQYWdlLnRzeA=="
         }
       ]
     },
@@ -2034,16 +2911,25 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz"
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw=="
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM="
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcHJveHkudHM="
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcmVkaXJlY3QudHM="
         },
         {
           "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcm91dGVyLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw=="
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM="
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvd29ya2Zsb3dSdW5uZXIudHM="
         }
       ]
     },
@@ -2065,13 +2951,13 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA=="
+          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4"
+          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvU2xvdC50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4"
+          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Fib3V0Q29udGVudC50c3g="
@@ -2080,19 +2966,10 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Jhbm5lci50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA=="
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0NvbG9yQmFyLnRzeA=="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0RhcmtDb250ZW50LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0Zvb3Rlci50c3g="
@@ -2104,10 +2981,25 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlYWRlci50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL0hlcm8udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RIaWdobGlnaHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RJbmZvLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3ROYXYudHN4"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1Byb2plY3RzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kYXZpLXNoYW1hL3NlY3Rpb25zL1NwYWNlci50c3g="
         }
       ]
     },
@@ -2118,13 +3010,16 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM="
+        },
+        {
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hEYXRlLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM="
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw=="
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz"
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hIb3N0LnRz"
         },
         {
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hNdWx0aS50cw=="
@@ -2133,10 +3028,10 @@
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hSYW5kb20udHM="
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw=="
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM="
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM="
         }
       ]
     },
@@ -2154,11 +3049,36 @@
         }
       ]
     },
-    "state": {
+    "actions": {
+      "title": "actions",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvY2FuY2VsLnRz"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvcnVuLnRz"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc2lnbmFsLnRz"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc3RhcnQudHM="
+        }
+      ]
+    },
+    "workflows": {
+      "title": "workflows",
+      "anyOf": []
+    },
+    "entrypoint": {
       "type": "object",
       "required": [
         "./routes/_middleware.ts",
-        "./routes/[...catchall].tsx"
+        "./routes/[...catchall].tsx",
+        "./routes/index.tsx"
       ],
       "properties": {
         "./routes/_middleware.ts": {
@@ -2171,15 +3091,38 @@
         "./routes/[...catchall].tsx": {
           "anyOf": [
             {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL3JvdXRlcy9bLi4uY2F0Y2hhbGxdLnRzeA==@Entrypoint"
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
+            }
+          ]
+        },
+        "./routes/index.tsx": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
             }
           ]
         }
-      },
+      }
+    },
+    "state": {
+      "allOf": [
+        {
+          "$ref": "#/root/entrypoint"
+        }
+      ],
       "additionalProperties": {
         "anyOf": [
           {
             "$ref": "#/root/functions"
+          },
+          {
+            "$ref": "#/root/accounts"
+          },
+          {
+            "$ref": "#/root/loaders"
+          },
+          {
+            "$ref": "#/root/routes"
           },
           {
             "$ref": "#/root/islands"
@@ -2198,6 +3141,12 @@
           },
           {
             "$ref": "#/root/flags"
+          },
+          {
+            "$ref": "#/root/actions"
+          },
+          {
+            "$ref": "#/root/workflows"
           }
         ]
       }
